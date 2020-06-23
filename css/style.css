@@ -199,9 +199,10 @@ h3 {
 @media screen and (max-width: 1000px) {
   .header__burger {
     display: block;
-    width: 24px;
+    flex: 0 0 24px;
     height: 12px;
     margin: 0 35px 0 0;
+    z-index: 20;
   }
 }
 .header__burger span {
@@ -257,7 +258,8 @@ h3 {
 }
 @media screen and (max-width: 1000px) {
   .header__logo {
-    margin: 0 50px 0 0;
+    flex: 0 0 100px;
+    margin: 0 35px 0 0;
   }
 }
 .header__logo img {
@@ -315,6 +317,9 @@ h3 {
   }
 }
 @media screen and (max-width: 740px) {
+  .header__balance {
+    margin: 0 20px 0 0;
+  }
   .header__balance .balance-sum {
     display: none;
   }
@@ -343,9 +348,19 @@ h3 {
     margin: 0 0 0 45px;
   }
 }
+@media screen and (max-width: 740px) {
+  .header__account {
+    margin: 0;
+  }
+}
 
 .notification-icon {
   margin: 0 10px 0 0;
+}
+@media screen and (max-width: 740px) {
+  .notification-icon {
+    margin: 0 20px 0 0;
+  }
 }
 .notification-icon__mobile {
   display: none;
@@ -398,63 +413,21 @@ h3 {
 .account-name:hover {
   color: #9D98EC;
 }
+@media screen and (max-width: 740px) {
+  .account-name {
+    display: none;
+  }
+}
 
 .dropdown--account {
   position: absolute;
   top: 7px;
   right: 0;
 }
-
-@media screen and (max-width: 767px) {
-  .header__menu {
-    position: fixed;
-    top: -100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background: #F1F1F1;
-    padding: 150px 15px 0 15px;
-    transition: all 0.3s ease-in-out;
+@media screen and (max-width: 740px) {
+  .dropdown--account {
+    display: none;
   }
-}
-.header__menu.active {
-  top: 0;
-}
-.header__list {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  z-index: 10;
-}
-@media screen and (max-width: 767px) {
-  .header__list {
-    display: block;
-    text-align: right;
-  }
-}
-.header__item {
-  margin: 0 0 0 30px;
-}
-@media screen and (max-width: 767px) {
-  .header__item {
-    margin: 0 0 30px 0;
-  }
-}
-.header__link {
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #F1F1F1;
-  transition: all 0.3s ease-in-out;
-}
-@media screen and (max-width: 767px) {
-  .header__link {
-    color: #282725;
-  }
-}
-.header__link:hover {
-  color: #FDC02E;
 }
 
 /* Header Styles End */
