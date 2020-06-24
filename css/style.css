@@ -100,7 +100,7 @@ h2 {
   h2 {
     max-width: 80%;
     font-size: 34px;
-    line-height: 1.47;
+    line-height: 1;
   }
 }
 
@@ -120,9 +120,20 @@ h3 {
   background: #F8FAFF;
   padding: 92px 0 25px;
 }
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 72px 0 25px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .wrapper {
+    padding: 72px 0 40px;
+  }
+}
 
 .content {
   display: flex;
+  padding: 40px 0 0 0;
 }
 
 .brand-number {
@@ -470,7 +481,7 @@ h3 {
   position: relative;
 }
 .sidebar__body {
-  padding: 40px 0 25px;
+  padding: 15px 0 25px;
 }
 @media screen and (max-width: 768px) {
   .sidebar__body {
@@ -606,19 +617,18 @@ h3 {
 .sidebar__chat--mobile {
   display: none;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   .sidebar__chat--mobile {
-    display: flex;
     position: relative;
-    bottom: 40px;
-    left: calc(50% - 30px);
+    display: flex;
+    margin: auto;
   }
 }
 .sidebar__icon-menu {
   position: absolute;
   top: 0;
   transform: translateX(-1000%);
-  padding: 40px 0 25px;
+  padding: 15px 0 25px;
   margin: 0 40px 0 0;
 }
 .sidebar__icon-menu.active {
@@ -678,9 +688,6 @@ h3 {
   .sales {
     margin: 0 0 40px 0;
   }
-}
-.sales__body {
-  padding: 40px 0 0;
 }
 .sales__title {
   max-width: 65%;
@@ -817,7 +824,7 @@ h3 {
 }
 @media screen and (max-width: 768px) {
   .sales-card__arrow {
-    bottom: 35px;
+    bottom: 30px;
     left: 30px;
   }
 }
@@ -968,7 +975,7 @@ h3 {
   }
 }
 .sections__title {
-  margin: 0 0 22px 0;
+  margin: 0 0 20px 0;
 }
 .sections__cards {
   display: grid;
@@ -993,6 +1000,7 @@ h3 {
 @media screen and (max-width: 640px) {
   .sections__cards {
     grid-template-columns: 1fr;
+    gap: 10px;
   }
 }
 
@@ -1107,13 +1115,13 @@ h3 {
 
 /* Sections Styles End */
 /* Service Styles Start */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   .service {
-    margin: 0 0 105px 0;
+    margin: 0 0 30px 0;
   }
 }
 .service__title {
-  margin: 0 0 22px 0;
+  margin: 0 0 20px 0;
 }
 .service__number {
   font-weight: 300;
@@ -1142,6 +1150,7 @@ h3 {
 @media screen and (max-width: 640px) {
   .service__cards {
     grid-template-columns: 1fr;
+    gap: 10px;
   }
 }
 
@@ -1181,7 +1190,7 @@ h3 {
 }
 .service-card__list li:before {
   position: absolute;
-  top: 8px;
+  top: 12px;
   left: 0;
   content: "";
   display: block;
