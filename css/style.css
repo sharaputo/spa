@@ -1113,6 +1113,10 @@ h3 {
   width: 30%;
 }
 
+.sections-card--review h3 {
+  max-width: 100%;
+}
+
 /* Sections Styles End */
 /* Service Styles Start */
 @media screen and (max-width: 640px) {
