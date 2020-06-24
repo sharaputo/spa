@@ -593,6 +593,12 @@ h3 {
   max-width: 16px;
   max-height: 16px;
 }
+.sidebar__chat--mobile {
+  display: flex;
+  position: relative;
+  bottom: 40px;
+  left: calc(50% - 30px);
+}
 .sidebar__icon-menu {
   position: absolute;
   top: 0;
@@ -646,7 +652,7 @@ h3 {
 .dropdown--sidebar {
   position: absolute;
   top: 14px;
-  right: 0;
+  right: 32px;
 }
 
 /* Sales Styles Start */
@@ -1068,6 +1074,11 @@ h3 {
 
 /* Sections Styles End */
 /* Service Styles Start */
+@media screen and (max-width: 600px) {
+  .service {
+    margin: 0 0 105px 0;
+  }
+}
 .service__title {
   margin: 0 0 22px 0;
 }
