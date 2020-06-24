@@ -118,7 +118,12 @@ h3 {
 
 .wrapper {
   background: #F8FAFF;
-  padding: 92px 0 25px;
+  padding: 92px 0 50px;
+}
+@media screen and (max-width: 1440px) {
+  .wrapper {
+    padding: 92px 0 40px;
+  }
 }
 @media screen and (max-width: 768px) {
   .wrapper {
@@ -481,7 +486,7 @@ h3 {
   position: relative;
 }
 .sidebar__body {
-  padding: 15px 0 25px;
+  padding: 15px 0 0 0;
 }
 @media screen and (max-width: 768px) {
   .sidebar__body {
@@ -628,8 +633,7 @@ h3 {
   position: absolute;
   top: 0;
   transform: translateX(-1000%);
-  padding: 15px 0 25px;
-  margin: 0 40px 0 0;
+  padding: 15px 0 0 0;
 }
 .sidebar__icon-menu.active {
   transform: translateX(0);
