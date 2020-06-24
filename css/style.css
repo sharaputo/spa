@@ -984,7 +984,7 @@ h3 {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   .sections__cards {
     grid-template-columns: 1fr;
   }
@@ -1133,7 +1133,7 @@ h3 {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   .service__cards {
     grid-template-columns: 1fr;
   }
