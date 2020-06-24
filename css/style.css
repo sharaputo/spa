@@ -594,10 +594,15 @@ h3 {
   max-height: 16px;
 }
 .sidebar__chat--mobile {
-  display: flex;
-  position: relative;
-  bottom: 40px;
-  left: calc(50% - 30px);
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .sidebar__chat--mobile {
+    display: flex;
+    position: relative;
+    bottom: 40px;
+    left: calc(50% - 30px);
+  }
 }
 .sidebar__icon-menu {
   position: absolute;
