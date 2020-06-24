@@ -41,7 +41,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-	$('.header__link').click(function (event) {
+	$('.sidebar__item a').click(function (event) {
 		$('.header__burger,.sidebar__nav').toggleClass('active');
 		$('body').toggleClass('lock');
 	});
