@@ -683,6 +683,7 @@ h3 {
   padding: 40px 0 0;
 }
 .sales__title {
+  max-width: 65%;
   margin: 0 0 20px 0;
 }
 .sales__cards {
