@@ -1168,13 +1168,13 @@ h3 {
   }
 }
 .service-card h3 {
-  margin: 0 0 22px 0;
+  margin: 0 0 20px 0;
   transition: all 0.2s ease-in-out;
 }
 .service-card__list {
   justify-self: baseline;
   justify-self: center;
-  margin: 0 0 10px 0;
+  margin: 0 0 20px 0;
 }
 .service-card__list li {
   line-height: 1.5;
