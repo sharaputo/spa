@@ -50,7 +50,7 @@ $(document).ready(function () {
 // Side menu open and close
 $(document).ready(function () {
 	$('.sidebar__collapse').click(function (event) {
-		$('.sidebar__icon-menu').toggleClass('active');
+		$('.sidebar__icon-menu,.sidebar__chat').toggleClass('active');
 		$('.sidebar__nav').toggleClass('closed');
 		$('main').css('padding-left', '40px');
 	});
@@ -58,7 +58,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 	$('.sidebar__expand').click(function (event) {
-		$('.sidebar__icon-menu').toggleClass('active');
+		$('.sidebar__icon-menu,.sidebar__chat').toggleClass('active');
 		$('.sidebar__nav').toggleClass('closed');
 		$('main').css('padding-left', '');
 	});
