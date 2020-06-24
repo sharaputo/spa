@@ -596,7 +596,7 @@ h3 {
 .sidebar__chat--mobile {
   display: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .sidebar__chat--mobile {
     display: flex;
     position: relative;
