@@ -98,7 +98,7 @@ h2 {
 }
 @media screen and (max-width: 768px) {
   h2 {
-    max-width: 90%;
+    max-width: 80%;
     font-size: 34px;
     line-height: 1.47;
   }
@@ -700,7 +700,7 @@ h3 {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   .sales__cards {
     grid-template-columns: 1fr;
     gap: 10px;
