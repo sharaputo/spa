@@ -1172,9 +1172,7 @@ h3 {
   transition: all 0.2s ease-in-out;
 }
 .service-card__list {
-  justify-self: baseline;
-  justify-self: center;
-  margin: 0 0 20px 0;
+  margin: auto 0 20px 0;
 }
 .service-card__list li {
   line-height: 1.5;
