@@ -493,6 +493,11 @@ h3 {
     padding: 120px 30px 40px;
   }
 }
+@media screen and (max-width: 600px) {
+  .sidebar__nav {
+    padding: 80px 20px 30px;
+  }
+}
 .sidebar__nav.active {
   top: 0;
   overflow-y: auto;
