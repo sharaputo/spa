@@ -585,6 +585,14 @@ h3 {
     display: none;
   }
 }
+.sidebar__chat.active {
+  width: 30px;
+  height: 30px;
+}
+.sidebar__chat.active img {
+  max-width: 16px;
+  max-height: 16px;
+}
 .sidebar__icon-menu {
   position: absolute;
   top: 0;
