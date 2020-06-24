@@ -498,6 +498,11 @@ h3 {
     padding: 120px 30px 40px;
   }
 }
+@media screen and (max-width: 768px) and (max-width: 600px) {
+  .sidebar__nav {
+    display: block;
+  }
+}
 @media screen and (max-width: 600px) {
   .sidebar__nav {
     padding: 80px 20px 30px;
