@@ -1319,8 +1319,9 @@ h3 {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 20vh 0 0 0;
+  padding: 10vh 0 0 0;
   overflow: auto;
+  z-index: 100;
 }
 .modal__body {
   margin: 0 auto;
@@ -1344,13 +1345,13 @@ h3 {
   }
 }
 .modal__title {
-  margin: 0 0 30px 0;
+  margin: 0 0 25px 0;
 }
 @media screen and (max-width: 600px) {
   .modal__title {
     font-size: 24px;
     line-height: 1.08;
-    margin: 0 0 20px 0;
+    margin: 0 0 10px 0;
   }
 }
 
@@ -1403,14 +1404,15 @@ h3 {
   }
 }
 
-.modal--forgot .modal__title {
-  margin: 0 0 28px 0;
-}
-
-.modal--forgot .modal__text {
+.modal__text {
   color: #000;
   line-height: 1.25;
   margin: 0 0 25px 0;
+}
+@media screen and (max-width: 600px) {
+  .modal__text {
+    margin: 0 0 10px 0;
+  }
 }
 
 .modal-backdrop {
@@ -1671,6 +1673,7 @@ h3 {
 
 .form-button {
   width: 100%;
+  font-size: 16px;
   font-weight: 600;
   color: #fff;
   text-align: center;
@@ -1729,14 +1732,19 @@ h3 {
   color: #9D98EC;
 }
 
-.modal-order-close {
+.modal-close {
   position: absolute;
   width: 18px;
   height: 18px;
-  top: 22px;
-  right: 22px;
+  top: 20px;
+  right: 20px;
   background: transparent;
   border: none;
+}
+
+.wrapper.locked {
+  height: 100vh;
+  overflow: hidden;
 }
 
 /* Modal windows Styles Start */
