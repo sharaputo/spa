@@ -64,15 +64,44 @@ $(document).ready(function () {
 	});
 });
 
+// Modal windows open
+$(document).ready(function () {
+	$('.header__account').click(function (event) {
+		$('.modal--registration').addClass('active');
+		$('.wrapper').addClass('locked');
+	});
+});
+
 // Modal windows close
 $(document).ready(function () {
+	$('.modal-close').click(function (event) {
+		$('.modal--registration').removeClass('active');
+		$('.modal--login').removeClass('active');
+		$('.modal--forgot').removeClass('active');
+		$('.modal--password').removeClass('active');
+		$('.modal--reset').removeClass('active');
+		$('.wrapper').removeClass('locked');
+	});
+});
+
+$(document).ready(function () {
 	$('.modal-backdrop').click(function (event) {
-		$('.modal-registration').removeClass('active');
+		$('.modal--registration').removeClass('active');
+		$('.modal--login').removeClass('active');
+		$('.modal--forgot').removeClass('active');
+		$('.modal--password').removeClass('active');
+		$('.modal--reset').removeClass('active');
+		$('.wrapper').removeClass('locked');
 	});
 });
 
 $(document).on('keydown', function (e) {
 	if (e.keyCode === 27) {
-		$('.modal-registration').removeClass('active');
+		$('.modal--registration').removeClass('active');
+		$('.modal--login').removeClass('active');
+		$('.modal--forgot').removeClass('active');
+		$('.modal--password').removeClass('active');
+		$('.modal--reset').removeClass('active');
+		$('.wrapper').removeClass('locked');
 	}
 });
