@@ -9,7 +9,6 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="css/style.css">
 	<meta name="robots" content="noindex, nofollow">
-	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
 </head>
 
 <body id="home">
@@ -226,8 +225,9 @@
 </div>
 
 <!--Sidebar End--><!--Main Start-->
-
 <main>
+
+	<!--Sales Start-->
 	<section class="sales">
 		<div class="sales__body">
 			<h2 class="sales__title">
@@ -362,6 +362,9 @@
 			</div>
 		</div>
 	</section>
+	<!--Sales End-->
+
+	<!--Sections Start-->
 	<section class="sections">
 		<div class="sections__body">
 			<h2 class="sections__title">Разделы</h2>
@@ -441,6 +444,9 @@
 			</div>
 		</div>
 	</section>
+	<!--Sections End-->
+
+	<!--Service Start-->
 	<section class="service">
 		<div class="service__body">
 			<h2 class="service__title">
@@ -560,11 +566,205 @@
 			</div>
 		</div>
 	</section>
+	<!--Service End-->
+
+	<!--Sidebar Start-->
 	<div class="sidebar__chat sidebar__chat--mobile">
 		<img src="img/icons/chat.png" alt="Чат">
 	</div>
-</main>
+	<!--Sidebar End-->
 
+	<!--Modal windows Start-->
+	<section class="modal modal--registration">
+		<div class="modal-backdrop"></div>
+		<div class="modal__body">
+			<div class="modal__content">
+				<h2 class="modal__title">Регистрация</h2>
+				<form class="registration-form" id="registration_form">
+					<ul class="form-inputs">
+						<li class="input-name">
+							<input type="text" id="registration_name" name="registration_name" placeholder="Ваше имя" value="">
+						</li>
+						<li class="input-email">
+							<input type="email" id="registration_email" name="registration_email" placeholder="E-mail"
+								value="">
+						</li>
+						<span class="email-warning">Некорректный адрес электронной почты</span>
+						<li class="input-phone">
+							<input type="tel" id="registration_phone" name="registration_phone" placeholder="Телефон" value="">
+						</li>
+						<li class="input-password">
+							<input type="password" id="registration_password" name="registration_password" placeholder="Пароль"
+								value="">
+							<img class="password-icon show-password" src="img/icons/show-password.svg" alt="show password">
+							<img class="password-icon hide-password" src="img/icons/hide-password.svg" alt="hide password">
+						</li>
+					</ul>
+					<div class="form-buttons">
+						<div class="form-btn">
+							<button type="submit" id="registration_submit" class="form-button">Зарегистрироваться</button>
+						</div>
+						<div class="registration-form-login">
+							<span>Есть аккаунт?</span>
+							<button class="form-button-link" id="login-form-open">Войти</button>
+						</div>
+					</div>
+					<span class="form-warning">
+						Создавая аккаунт, вы соглашаетесь с <a href="#!">политикой компании в
+							отношении обработки
+							персональных данных</a>
+					</span>
+				</form>
+				<button type="button" aria-label="Close" class="modal-order-close">
+					<div aria-hidden="true">
+						<img src="img/icons/modal-close.svg" alt="close modal">
+					</div>
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="modal modal--login">
+		<div class="modal-backdrop"></div>
+		<div class="modal__body">
+			<div class="modal__content">
+				<h2 class="modal__title">Вход</h2>
+				<form class="login-form" id="login_form">
+					<ul class="form-inputs">
+						<li class="input-email">
+							<input type="email" id="login_email" name="login_email" placeholder="E-mail" value="">
+						</li>
+						<span class="email-warning">Некорректный адрес электронной почты</span>
+						<li class="input-password">
+							<input type="password" id="login_password" name="login_password" placeholder="Пароль" value="">
+							<img class="password-icon show-password" src="img/icons/show-password.svg" alt="show password">
+							<img class="password-icon hide-password" src="img/icons/hide-password.svg" alt="hide password">
+						</li>
+						<li class="input-checkbox">
+							<input type="checkbox" id="login_checkbox" name="login_checkbox">
+							<label for="login_checkbox">Запомнить меня</label>
+						</li>
+					</ul>
+					<div class="form-buttons">
+						<div class="form-btn">
+							<button type="submit" id="login_submit" class="form-button">Войти</button>
+						</div>
+						<div class="login-forgot">
+							<button class="form-button-link" id="forgot-form-open">Забыли пароль?
+							</button>
+						</div>
+					</div>
+					<div class="form-warning">
+						<span>Нет аккаунта? </span>
+						<div class="signup-form-btn">
+							<button class="form-button-link" id="signup-form-open">Зарегистрироваться</button>
+						</div>
+					</div>
+				</form>
+				<button type="button" aria-label="Close" class="modal-order-close">
+					<div aria-hidden="true">
+						<img src="img/icons/modal-close.svg" alt="close modal">
+					</div>
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="modal modal--forgot">
+		<div class="modal-backdrop"></div>
+		<div class="modal__body">
+			<div class="modal__content">
+				<h2 class="modal__title">Забыли?</h2>
+				<p class="modal__text">Введите ваш e-mail и мы вышлем
+					инструкцию по восстановлению пароля.</p>
+				<form class="forgot-form" id="forgot_form">
+					<ul class="form-inputs">
+						<li class="input-email">
+							<input type="email" id="forgot_email" name="forgot_email" placeholder="E-mail" value="">
+						</li>
+						<span class="email-warning">Некорректный адрес электронной почты</span>
+					</ul>
+					<div class="form-buttons">
+						<div class="form-btn">
+							<button type="submit" id="login_submit" class="form-button">Войти</button>
+						</div>
+					</div>
+				</form>
+				<button type="button" aria-label="Close" class="modal-order-close">
+					<div aria-hidden="true">
+						<img src="img/icons/modal-close.svg" alt="close modal">
+					</div>
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="modal modal--password">
+		<div class="modal-backdrop"></div>
+		<div class="modal__body">
+			<div class="modal__content">
+				<h2 class="modal__title">Новый пароль</h2>
+				<form class="password-form" id="password_form">
+					<ul class="form-inputs">
+						<li class="input-password">
+							<input type="password" id="login_password" name="login_password" placeholder="Пароль" value="">
+							<img class="password-icon show-password" src="img/icons/show-password.svg" alt="show password">
+							<img class="password-icon hide-password" src="img/icons/hide-password.svg" alt="hide password">
+						</li>
+					</ul>
+					<div class="form-buttons">
+						<div class="form-btn">
+							<button type="submit" id="password_submit" class="form-button">Применить</button>
+						</div>
+					</div>
+				</form>
+				<button type="button" aria-label="Close" class="modal-order-close">
+					<div aria-hidden="true">
+						<img src="img/icons/modal-close.svg" alt="close modal">
+					</div>
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="modal modal--reset">
+		<div class="modal-backdrop"></div>
+		<div class="modal__body">
+			<div class="modal__content">
+				<h2 class="modal__title">Вход</h2>
+				<form class="reset-form" id="reset_form">
+					<ul class="form-inputs">
+						<li class="input-email">
+							<input type="email" id="reset_email" name="reset_email" placeholder="E-mail" value="">
+						</li>
+						<span class="email-warning">Некорректный адрес электронной почты</span>
+						<li class="input-password">
+							<input type="password" id="reset_password" name="reset_password" placeholder="Пароль" value="">
+							<img class="password-icon show-password" src="img/icons/show-password.svg" alt="show password">
+							<img class="password-icon hide-password" src="img/icons/hide-password.svg" alt="hide password">
+						</li>
+					</ul>
+					<div class="form-buttons">
+						<div class="form-btn">
+							<button type="submit" id="login_submit" class="form-button">Войти</button>
+						</div>
+						<div class="input-checkbox">
+							<input type="checkbox" id="reset_checkbox" name="reset_checkbox">
+							<label for="reset_checkbox">Запомнить меня</label>
+						</div>
+					</div>
+				</form>
+				<button type="button" aria-label="Close" class="modal-order-close">
+					<div aria-hidden="true">
+						<img src="img/icons/modal-close.svg" alt="close modal">
+					</div>
+				</button>
+			</div>
+		</div>
+	</section>
+	<!--Modal windows End-->
+
+</main>
 <!--Main End-->			</div>
 		</div>
 	</div>
