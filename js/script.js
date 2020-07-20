@@ -63,3 +63,16 @@ $(document).ready(function () {
 		$('main').css('padding-left', '');
 	});
 });
+
+// Modal windows close
+$(document).ready(function () {
+	$('.modal-backdrop').click(function (event) {
+		$('.modal-registration').removeClass('active');
+	});
+});
+
+$(document).on('keydown', function (e) {
+	if (e.keyCode === 27) {
+		$('.modal-registration').removeClass('active');
+	}
+});
