@@ -91,19 +91,6 @@ body.lock {
   overflow: hidden;
 }
 
-h2 {
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 1.475;
-}
-@media screen and (max-width: 768px) {
-  h2 {
-    max-width: 80%;
-    font-size: 34px;
-    line-height: 1;
-  }
-}
-
 h3 {
   font-size: 24px;
   font-weight: 500;
@@ -165,6 +152,40 @@ h3 {
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
   cursor: pointer;
+}
+
+/* Component Styles */
+.section-title {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.475;
+}
+@media screen and (max-width: 768px) {
+  .section-title {
+    font-size: 34px;
+    line-height: 1;
+  }
+}
+@media screen and (max-width: 600px) {
+  .section-title {
+    max-width: 90%;
+  }
+}
+
+.back-service {
+  display: block;
+  color: #A9A9BD;
+  line-height: 0.8;
+  margin: 0 0 20px 0;
+  transition: all 0.2s ease-in-out;
+}
+.back-service:hover {
+  color: #9D98EC;
+}
+@media screen and (max-width: 600px) {
+  .back-service {
+    margin: 0 0 10px 0;
+  }
 }
 
 /* Containers */
@@ -1443,7 +1464,8 @@ h3 {
   grid-column: span 4;
 }
 
-.form-inputs input {
+.form-inputs input,
+.form-inputs textarea {
   width: 100%;
   font-size: 16px;
   color: #000;
@@ -1453,16 +1475,19 @@ h3 {
   box-sizing: border-box;
   border-radius: 3px;
 }
-.form-inputs input::placeholder {
+.form-inputs input::placeholder,
+.form-inputs textarea::placeholder {
   font-size: 16px;
   color: #A9A9BD;
 }
-.form-inputs input.error {
+.form-inputs input.error,
+.form-inputs textarea.error {
   background: rgba(255, 0, 0, 0.1);
   border: none;
 }
 @media screen and (max-width: 600px) {
-  .form-inputs input {
+  .form-inputs input,
+.form-inputs textarea {
     padding: 12px 0 12px 21px;
   }
 }
@@ -1748,3 +1773,396 @@ h3 {
 }
 
 /* Modal windows Styles Start */
+/* Content-box Styles Start */
+.locked {
+  flex: 1;
+}
+
+@media screen and (max-width: 640px) {
+  .content-management {
+    margin: 0 0 30px 0;
+  }
+}
+
+.section-title {
+  margin: 0 0 20px 0;
+}
+
+.section-number {
+  font-weight: 300;
+  color: #A9A9BD;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  padding: 35px 40px 40px;
+  background: #fff;
+  box-shadow: 0px 0px 25px rgba(49, 45, 112, 0.08);
+  border-radius: 3px;
+}
+.card a {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card__icon {
+  max-width: 64px;
+  max-height: 64px;
+  margin: 0 0 27px 0;
+}
+.card h3 {
+  transition: all 0.2s ease-in-out;
+}
+.card__arrow {
+  margin: auto 0 0 0;
+}
+
+.card--content h3 {
+  margin: 0 0 33px 0;
+}
+.card--content .card__arrow svg {
+  fill: #00D385;
+  transition: all 0.2s ease-in-out;
+}
+.card--content .card__arrow svg:hover {
+  fill: #00EE96;
+}
+
+.content-management .cards-title {
+  max-width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .content-management .cards-title {
+    max-width: 80%;
+  }
+}
+
+/* Modal windows Styles Start */
+/* Assortment-load Styles Start */
+@media screen and (max-width: 640px) {
+  .assortment-load {
+    margin: 0 0 30px 0;
+  }
+}
+.assortment-load__body {
+  padding: 20px 0 0 0;
+}
+@media screen and (max-width: 600px) {
+  .assortment-load__body {
+    padding: 0;
+  }
+}
+.assortment-load__content {
+  display: flex;
+  padding: 0 0 40px 0;
+  border-bottom: 1px solid #E3E4F0;
+  margin: 0 0 30px 0;
+}
+@media screen and (max-width: 1439px) {
+  .assortment-load__content {
+    display: block;
+  }
+}
+
+.advantages {
+  flex: 1 0 640px;
+  margin: 0 35px 0 0;
+}
+@media screen and (max-width: 1439px) {
+  .advantages {
+    margin: 0 0 30px 0;
+  }
+}
+.advantages__description {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: #A9A9BD;
+  margin: 0 0 23px 0;
+}
+.advantages__list {
+  margin: 0 0 30px 0;
+}
+.advantages__item {
+  display: flex;
+  align-items: center;
+}
+.advantages__tick {
+  margin: 0 15px 0 0;
+}
+.advantages__text {
+  line-height: 1.85;
+  color: #000;
+}
+.advantages__action {
+  display: flex;
+  align-items: center;
+}
+.advantages__button {
+  width: 200px;
+  margin: 0 30px 0 0;
+}
+.advantages__offer {
+  font-weight: 600;
+  line-height: 1.85;
+  color: #000;
+}
+
+.button {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #fff;
+  background: #00D385;
+  border-radius: 3px;
+  padding: 17px 0;
+  transition: all 0.2s ease-in-out;
+}
+.button:hover {
+  background: #00EE96;
+}
+
+.marketplaces {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(205px, 1fr));
+  gap: 20px;
+  place-items: center;
+}
+@media screen and (max-width: 600px) {
+  .marketplaces {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.marketplaces__image {
+  width: 100%;
+  height: 130px;
+  display: grid;
+  place-items: center;
+  border: 2px dashed rgba(49, 45, 112, 0.1);
+  border-radius: 3px;
+}
+@media screen and (max-width: 600px) {
+  .marketplaces__image {
+    height: 90px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .marketplaces__image img {
+    max-width: 107px;
+    height: auto;
+  }
+}
+
+.workflow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+@media screen and (max-width: 1024px) {
+  .workflow {
+    grid-template-columns: 1fr;
+  }
+}
+.workflow__card {
+  grid-column: span 1;
+  display: flex;
+  background: #FFF;
+  box-shadow: 0px 0px 25px rgba(49, 45, 112, 0.08);
+  border-radius: 3px;
+  padding: 30px 22px;
+}
+@media screen and (max-width: 600px) {
+  .workflow__card {
+    position: relative;
+    display: block;
+  }
+}
+.workflow__number {
+  font-size: 120px;
+  font-weight: 300;
+  line-height: 1;
+  color: rgba(169, 169, 189, 0.15);
+  margin: 0 40px 0 0;
+}
+@media screen and (max-width: 600px) {
+  .workflow__number {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    font-size: 70px;
+    margin: 0 20px 0 0;
+  }
+}
+.workflow__content {
+  width: 100%;
+  padding: 8px 0 0 0;
+}
+@media screen and (max-width: 600px) {
+  .workflow__content {
+    padding: 0;
+  }
+}
+.workflow__title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.8;
+  color: #000;
+  margin: 0 0 10px 0;
+}
+@media screen and (max-width: 600px) {
+  .workflow__title {
+    margin: 0 0 15px 63px;
+  }
+}
+.workflow__list {
+  line-height: 1.8;
+  color: #000;
+}
+.workflow__item {
+  width: 100%;
+  position: relative;
+  padding: 0 0 0 15px;
+}
+.workflow__item::before {
+  position: absolute;
+  top: 14px;
+  left: 0;
+  content: "";
+  display: block;
+  width: 2px;
+  height: 2px;
+  background: #9D98EC;
+}
+.workflow__tick {
+  text-align: right;
+}
+
+.modal--order {
+  display: none;
+  padding: 5vh 0 0 0;
+}
+
+.modal--order.active {
+  display: block;
+}
+
+.modal--order .modal__body {
+  max-width: 620px;
+}
+@media screen and (max-width: 600px) {
+  .modal--order .modal__body {
+    max-width: 340px;
+  }
+}
+
+.modal--order .input-email {
+  grid-column: span 2;
+}
+@media screen and (max-width: 600px) {
+  .modal--order .input-email {
+    grid-column: span 4;
+  }
+}
+
+.modal--order .input-phone {
+  grid-column: span 2;
+}
+@media screen and (max-width: 600px) {
+  .modal--order .input-phone {
+    grid-column: span 4;
+  }
+}
+
+.modal--order .email-warning {
+  grid-row: 4;
+}
+
+.modal--order .input-checkboxes {
+  padding: 5px 0 5px 0;
+}
+
+.modal--order .input-checkboxes h3 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #000;
+  margin: 0 0 15px 0;
+}
+
+.modal--order .checkboxes {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  column-gap: 60px;
+  row-gap: 12px;
+}
+
+.modal--order .input-checkbox {
+  grid-column: span 1;
+}
+
+.order-files {
+  margin: 0 0 30px 0;
+}
+
+.order-file {
+  display: flex;
+  align-items: center;
+  margin: 0 0 12px 0;
+}
+
+.order-file:last-child {
+  margin: 0;
+}
+
+.order-add {
+  margin: 0 10px 0 0;
+}
+
+.order-file-name {
+  line-height: 1.85;
+  color: #000;
+  margin: 0 8px 0 0;
+}
+
+.file-delete {
+  width: 14px;
+  height: 14px;
+  background: transparent;
+  border: none;
+}
+
+.order-file-label {
+  position: relative;
+  display: flex;
+}
+
+.order-file-label input {
+  position: absolute;
+  outline: 0;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-user-select: none;
+          user-select: none;
+}
+
+.form-btn {
+  max-width: 160px;
+}
+
+.modal--order .form-button {
+  background: #00D385;
+  transition: all 0.2s ease-in-out;
+}
+.modal--order .form-button:hover {
+  background: #00EE96;
+}
+
+/* Assortment-load Styles End */
