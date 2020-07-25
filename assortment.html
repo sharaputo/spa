@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>A:DAPTER</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="robots" content="noindex, nofollow">
+</head>
+
+<body id="home">
+<!--Header Start-->
+
+<header class="header">
+	<div class="container">
+		<div class="header__body">
+			<div class="header__burger">
+				<span></span>
+			</div>
+			<a href="#home" class="header__logo">
+				<img src="img/logo.svg" alt="A:DAPTER">
+			</a>
+			<a href="#home" class="header__back">В начало</a>
+			<a href="#!" class="header__notifications">
+				<div class="notification-icon">
+					<img class="notification-icon__pc" src="img/icons/mail.svg" alt="Сообщения">
+					<img class="notification-icon__mobile" src="img/icons/mail-mobile.svg" alt="Сообщения">
+				</div>
+				<p class="notification-text">Уведомления</p>
+				<div class="brand-number" id="notifications-number">38</div>
+			</a>
+			<div class="header__balance">
+				<p class="balance-text">Ваш баланс: </p>
+				<p class="balance-sum" id="header-balance">43 317 250 рублей</p>
+				<div class="balance-icon">
+					<img src="img/icons/wallet.png" alt="Кошелёк">
+				</div>
+			</div>
+			<a href="#!" class="header__account">
+				<div class="account-icon">
+					<img src="img/icons/profile.svg" alt="Сообщения">
+				</div>
+				<p class="account-name">Сергей Петров</p>
+				<span class="dropdown dropdown--account"></span>
+			</a>
+		</div>
+	</div>
+</header>
+
+<!--Header End-->	<div class="wrapper">
+		<div class="container">
+			<div class="content">
+<!--Sidebar Start-->
+
+<div class="sidebar">
+	<div class="sidebar__body">
+		<div class="sidebar__collapse">
+			<svg xmlns="http://www.w3.org/2000/svg" width="9" height="18" viewBox="0 0 9 18" fill="none">
+				<style>
+					.a {
+						stroke-linecap: round;
+						stroke-width: 3;
+						stroke: #DFDFE6;
+					}
+				</style>
+				<path d="M6.8 15.1L3 9.1" class="a" />
+				<path d="M6.8 3.1L3 9.1" class="a" />
+			</svg>
+		</div>
+		<nav class="sidebar__nav">
+			<ul class="sidebar__general">
+				<li class="sidebar__item sidebar__item--bold">
+					<a href="#!">Сводка</a>
+				</li>
+				<li class="sidebar__item sidebar__item--bold">
+					<a href="#!">Сводная информация</a>
+				</li>
+				<li class="sidebar__item sidebar__item--bold sidebar__item--dropdown">
+					<a href="#!"><span>Каналы продаж</span></a>
+					<span class="dropdown dropdown--sidebar"></span>
+				</li>
+			</ul>
+			<ul class="sidebar__goods">
+				<li class="sidebar__item sidebar__item--bold">
+					<a href="#!">Товары</a>
+				</li>
+				<li class="sidebar__item sidebar__item--bold sidebar__item--number">
+					<a href="#!">
+						<span>Заказы</span>
+						<div class="brand-number" id="sidebar-orders">14</div>
+					</a>
+				</li>
+				<li class="sidebar__item">
+					<a href="#!">Товарная аналитика</a>
+				</li>
+				<li class="sidebar__item">
+					<a href="#!">Маркетинг</a>
+				</li>
+			</ul>
+			<ul class="sidebar__mobile">
+				<li class="sidebar__item">
+					<a href="#!">Стоки и поставки</a>
+				</li>
+				<li class="sidebar__item">
+					<a href="#!">Отзывы и вопросы</a>
+				</li>
+				<li class="sidebar__item">
+					<a href="#!">Данные по рынку</a>
+				</li>
+			</ul>
+			<ul class="sidebar__service">
+				<li class="sidebar__item">
+					<a href="#!">Услуги</a>
+				</li>
+				<li class="sidebar__item">
+					<a href="#!">Партнерства</a>
+				</li>
+				<li class="sidebar__item">
+					<a href="#!">Настроить</a>
+				</li>
+			</ul>
+			<ul class="sidebar__reference">
+				<li class="sidebar__item">
+					<a href="#!">Справочный центр</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="sidebar__chat">
+			<img src="img/icons/chat.png" alt="Чат">
+		</div>
+	</div>
+	<div class="sidebar__icon-menu">
+		<div class="sidebar__expand">
+			<svg xmlns="http://www.w3.org/2000/svg" width="9" height="18" viewBox="0 0 9 18" fill="none">
+				<style>
+					.a {
+						stroke-linecap: round;
+						stroke-width: 3;
+						stroke: #DFDFE6;
+					}
+				</style>
+				<path d="M3 15.1L6.8 9.1" class="a" />
+				<path d="M3 3.1L6.8 9.1" class="a" />
+			</svg>
+		</div>
+		<nav class="sidebar__nav--collapsed">
+			<ul class="sidebar__general">
+				<li class="sidebar__item--collapsed">
+					<a href="#!">
+						<img src="img/icons/sidebar/presentation.png" alt="presentation">
+					</a>
+				</li>
+				<li class="sidebar__item--collapsed">
+					<a href="#!">
+						<img src="img/icons/sidebar/analytics.png" alt="analytics">
+					</a>
+				</li>
+			</ul>
+			<ul class="sidebar__goods">
+				<li class="sidebar__item--collapsed">
+					<a href="#!">
+						<img src="img/icons/sidebar/order.png" alt="order">
+					</a>
+				</li>
+				<li class="sidebar__item--collapsed">
+					<a href="#!">
+						<img src="img/icons/sidebar/give.png" alt="give">
+					</a>
+				</li>
+				<li class="sidebar__item--collapsed">
+					<a href="#!">
+						<img src="img/icons/sidebar/limited-stock.png" alt="limited-stock">
+					</a>
+				</li>
+				<li class="sidebar__item--collapsed">
+					<a href="#!">
+						<img src="img/icons/sidebar/online-order.png" alt="online-order">
+					</a>
+				</li>
+				<li class="sidebar__item--collapsed">
+					<a href="#!">
+						<img src="img/icons/sidebar/ecommerce.png" alt="ecommerce">
+					</a>
+				</li>
+				<li class="sidebar__item--collapsed">
+					<a href="#!">
+						<img src="img/icons/sidebar/help.png" alt="help">
+					</a>
+				</li>
+				<li class="sidebar__item--collapsed">
+					<a href="#!">
+						<img src="img/icons/sidebar/stand.png" alt="stand">
+					</a>
+				</li>
+			</ul>
+			<ul class="sidebar__service">
+				<li class="sidebar__item--collapsed">
+					<a href="#!">
+						<img src="img/icons/sidebar/form.png" alt="form">
+					</a>
+				</li>
+				<li class="sidebar__item--collapsed">
+					<a href="#!">
+						<img src="img/icons/sidebar/shipping-and-delivery.png" alt="shipping-and-delivery">
+					</a>
+				</li>
+				<li class="sidebar__item--collapsed">
+					<a href="#!">
+						<img src="img/icons/sidebar/gear.png" alt="gear">
+					</a>
+				</li>
+			</ul>
+			<ul class="sidebar__reference">
+				<li class="sidebar__item--collapsed">
+					<a href="#!">
+						<img src="img/icons/sidebar/question.png" alt="question">
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</div>
+
+<!--Sidebar End--><!--Main Start-->
+<main class="locked">
+
+	<!--Assortment-load Start-->
+	<section class="assortment-load">
+		<div class="assortment-load__body">
+			<a href="index.html" class="back-service">К списку услуг</a>
+			<h2 class="section-title">Загрузка ассортимента</h2>
+			<div class="assortment-load__content">
+				<div class="advantages">
+					<p class="advantages__description">Быстро и качественно размещаем товары на крупнейших маркетплейсах</p>
+					<ul class="advantages__list">
+						<li class="advantages__item">
+							<div class="advantages__tick">
+								<img src="img/icons/tick.png" alt="icon">
+							</div>
+							<p class="advantages__text">
+								Загрузили ассортимент для более 1 000 клиентов
+							</p>
+						</li>
+						<li class="advantages__item">
+							<div class="advantages__tick">
+								<img src="img/icons/tick.png" alt="icon">
+							</div>
+							<p class="advantages__text">
+								Создали более 300 000 карточек товара
+							</p>
+						</li>
+						<li class="advantages__item">
+							<div class="advantages__tick">
+								<img src="img/icons/tick.png" alt="icon">
+							</div>
+							<p class="advantages__text">
+								Работаем со всеми категориями
+							</p>
+						</li>
+						<li class="advantages__item">
+							<div class="advantages__tick">
+								<img src="img/icons/tick.png" alt="icon">
+							</div>
+							<p class="advantages__text">
+								Знаем все тонкости работы с каждой площадкой
+							</p>
+						</li>
+					</ul>
+					<div class="advantages__action">
+						<div class="advantages__button" id="modal_order_open">
+							<button class="button">Оставить заявку</button>
+						</div>
+						<p class="advantages__offer">от 100 руб за карточку товара</p>
+					</div>
+				</div>
+				<ul class="marketplaces">
+					<li class="marketplaces__image">
+						<img src="img/marketplaces/ozon.png" alt="ozon">
+					</li>
+					<li class="marketplaces__image">
+						<img src="img/marketplaces/wildberries.png" alt="wildberries">
+					</li>
+					<li class="marketplaces__image">
+						<img src="img/marketplaces/beru.png" alt="beru">
+					</li>
+					<li class="marketplaces__image">
+						<img src="img/marketplaces/goods.png" alt="goods">
+					</li>
+					<li class="marketplaces__image">
+						<img src="img/marketplaces/tmall.png" alt="tmall">
+					</li>
+				</ul>
+			</div>
+			<h2 class="section-title">Как ADAPTER загружает ассортимент</h2>
+			<div class="assortment-load__workflow">
+				<ul class="workflow">
+					<li class="workflow__card">
+						<span class="workflow__number">1</span>
+						<div class="workflow__content">
+							<h3 class="workflow__title">Анализируем качество ваших данных о товарах:</h3>
+							<ul class="workflow__list">
+								<li class="workflow__item">оцениваем сложность
+								</li>
+								<li class="workflow__item">
+									находим способы улучшения
+								</li>
+								<li class="workflow__item">
+									озвучиваем сроки загрузки
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="workflow__card">
+						<span class="workflow__number">2</span>
+						<div class="workflow__content">
+							<h3 class="workflow__title">Адаптируем данные под требования каждой площадки:</h3>
+							<ul class="workflow__list">
+								<li class="workflow__item">
+									форматируем фотографии и распределяем в корректные категории
+								</li>
+								<li class="workflow__item">
+									объединяем по цветам и размерам
+								</li>
+								<li class="workflow__item">
+									используем самый продающий нейминг и проверяем качество описаний
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="workflow__card">
+						<span class="workflow__number">3</span>
+						<div class="workflow__content">
+							<h3 class="workflow__title">Дополняем информацию для максимально полного заполнения
+								карточек:</h3>
+							<ul class="workflow__list">
+								<li class="workflow__item">
+									ищем недостающие характеристики
+								</li>
+								<li class="workflow__item">
+									догружаем дополнительные фото и видео
+								</li>
+								<li class="workflow__item">
+									присоединяем к уже существующим карточкам-бестселлерам
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="workflow__card">
+						<span class="workflow__number">4</span>
+						<div class="workflow__content">
+							<h3 class="workflow__title">Загружаем ассортимент на площадку:</h3>
+							<ul class="workflow__list">
+								<li class="workflow__item">
+									формируем финальный загрузочный файл
+								</li>
+								<li class="workflow__item">
+									решаем все возможные в процессе проблемы
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="workflow__card">
+						<span class="workflow__number">5</span>
+						<div class="workflow__content">
+							<h3 class="workflow__title">Ваши товары загружены и готовы к продаже</h3>
+							<div class="workflow__tick">
+								<img src="img/icons/workflow-tick.png" alt="icon">
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!--Assortment-load End-->
+
+	<!--Sidebar Start-->
+	<div class="sidebar__chat sidebar__chat--mobile">
+		<img src="img/icons/chat.png" alt="Чат">
+	</div>
+	<!--Sidebar End-->
+
+	<!--Modal windows Start-->
+	<section class="modal modal--order">
+		<div class="modal-backdrop"></div>
+		<div class="modal__body">
+			<div class="modal__content">
+				<h2 class="modal__title">Заявка на услугу Adapter</h2>
+				<p class="modal__text">Вводный текст, который можно размещать перед заполнением формы.
+					В нем может быть все что угодно, инструкции, просьбы подонатить, купить билет в Париж или прислать
+					курьера с кофе.</p>
+				<form class="order-form" id="order_form">
+					<ul class="form-inputs">
+						<li class="input-company">
+							<input type="text" id="order_company" name="order_company" placeholder="Название компании"
+								value="">
+						</li>
+						<li class="input-name">
+							<input type="text" id="order_name" name="order_name" placeholder="Ваше имя" value="">
+						</li>
+						<li class="input-email">
+							<input type="email" id="order_email" name="order_email" placeholder="E-mail" value="">
+						</li>
+						<span class="email-warning">Некорректный адрес электронной почты</span>
+						<li class="input-phone">
+							<input type="tel" id="order_phone" name="order_phone" placeholder="Телефон" value="">
+						</li>
+						<li class="input-number">
+							<input type="password" id="order_number" name="order_number" placeholder="Количество артикулов: 0"
+								value="">
+						</li>
+						<li class="input-checkboxes">
+							<h3>Выберите интересующие вас маркетплейсы:</h3>
+							<ul class="checkboxes">
+								<li class="input-checkbox">
+									<input type="checkbox" id="order_wildberries" name="order_wildberries">
+									<label for="order_wildberries">wildberries</label>
+								</li>
+								<li class="input-checkbox">
+									<input type="checkbox" id="order_beru" name="order_beru">
+									<label for="order_beru">Беру</label>
+								</li>
+								<li class="input-checkbox">
+									<input type="checkbox" id="order_ozon" name="order_ozon">
+									<label for="order_ozon">Ozon</label>
+								</li>
+								<li class="input-checkbox">
+									<input type="checkbox" id="order_goods" name="order_goods">
+									<label for="order_goods">Goods</label>
+								</li>
+								<li class="input-checkbox">
+									<input type="checkbox" id="order_tmall" name="order_tmall">
+									<label for="order_tmall">TMall</label>
+								</li>
+							</ul>
+						</li>
+						<li class="input-comment">
+							<textarea name="order_comment" id="order_comment" cols="30" rows="4"
+								placeholder="Комментарий при необходимости"></textarea>
+						</li>
+					</ul>
+					<div class="order-files">
+						<div class="order-file">
+							<div class="order-add">
+								<img src="img/icons/add-file.png" alt="icon">
+							</div>
+							<span class="order-file-name">Compred_na_angliyskom.doc</span>
+							<button type="button" class="file-delete">
+								<div aria-hidden="true">
+									<img src="img/icons/modal-close.svg" alt="file-delete">
+								</div>
+							</button>
+						</div>
+						<div class="order-file">
+							<label class="order-file-label">
+								<div class="order-add">
+									<img src="img/icons/add-file.png" alt="icon">
+								</div>
+								<span class="order-add-text">Добавить еще файл</span>
+								<input type="file" name="order_file" id="order_file">
+							</label>
+						</div>
+					</div>
+					<div class="form-btn">
+						<button type="submit" id="order_submit" class="form-button">Отправить</button>
+					</div>
+				</form>
+				<button type="button" aria-label="Close" class="modal-close">
+					<div aria-hidden="true">
+						<img src="img/icons/modal-close.svg" alt="close modal">
+					</div>
+				</button>
+			</div>
+		</div>
+	</section>
+	<!--Modal windows End-->
+
+</main>
+<!--Main End-->			</div>
+		</div>
+	</div>
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
