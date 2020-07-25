@@ -72,6 +72,14 @@ $(document).ready(function () {
 	});
 });
 
+// Modal windows open
+$(document).ready(function () {
+	$('#modal_order_open').click(function (event) {
+		$('.modal--order').addClass('active');
+		$('.wrapper').addClass('locked');
+	});
+});
+
 // Modal windows close
 $(document).ready(function () {
 	$('.modal-close').click(function (event) {
@@ -80,6 +88,7 @@ $(document).ready(function () {
 		$('.modal--forgot').removeClass('active');
 		$('.modal--password').removeClass('active');
 		$('.modal--reset').removeClass('active');
+		$('.modal--order').removeClass('active');
 		$('.wrapper').removeClass('locked');
 	});
 });
@@ -91,6 +100,7 @@ $(document).ready(function () {
 		$('.modal--forgot').removeClass('active');
 		$('.modal--password').removeClass('active');
 		$('.modal--reset').removeClass('active');
+		$('.modal--order').removeClass('active');
 		$('.wrapper').removeClass('locked');
 	});
 });
@@ -102,6 +112,7 @@ $(document).on('keydown', function (e) {
 		$('.modal--forgot').removeClass('active');
 		$('.modal--password').removeClass('active');
 		$('.modal--reset').removeClass('active');
+		$('.modal--order').removeClass('active');
 		$('.wrapper').removeClass('locked');
 	}
 });
