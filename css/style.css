@@ -2141,6 +2141,10 @@ h3 {
   height: 14px;
   background: transparent;
   border: none;
+  padding: 2px 0 0 0;
+}
+.file-delete img {
+  width: 100%;
 }
 
 .order-file-label {
