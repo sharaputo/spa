@@ -8,19 +8,25 @@
   border: 0;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
-:focus, :active {
+:focus,
+:active {
   outline: none;
 }
 
-nav, footer, header {
+nav,
+footer,
+header {
   display: block;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   line-height: 1;
@@ -29,17 +35,37 @@ html, body {
   -webkit-text-size-adjust: 100%;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font-family: inherit;
+  font-size: inherit;
   color: inherit;
   letter-spacing: inherit;
+  border: none;
+}
+
+input[type=search],
+input[type=text],
+input[type=email],
+input[type=tel] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+
+input::-webkit-search-cancel-button {
+  display: none;
 }
 
 textarea {
   resize: none;
 }
 
-button, label {
+button,
+label {
   cursor: pointer;
 }
 
@@ -52,11 +78,14 @@ a {
   color: inherit;
 }
 
-a:focus, a:active {
+a:focus,
+a:active {
   outline: none;
 }
 
-a, a:visited, a:hover {
+a,
+a:visited,
+a:hover {
   text-decoration: none;
 }
 
@@ -68,7 +97,12 @@ img {
   vertical-align: top;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: inherit;
   font-weight: inherit;
 }
