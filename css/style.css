@@ -2047,7 +2047,7 @@ h3 {
 
 .modal--order {
   display: none;
-  padding: 5vh 0 0 0;
+  padding: 5vh 0 5vh 0;
 }
 
 .modal--order.active {
