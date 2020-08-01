@@ -72,7 +72,6 @@ $(document).ready(function () {
 	});
 });
 
-// Modal windows open
 $(document).ready(function () {
 	$('#modal_order_open').click(function (event) {
 		$('.modal--order').addClass('active');

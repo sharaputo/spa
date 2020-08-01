@@ -139,6 +139,7 @@ h3 {
 }
 
 .wrapper {
+  min-height: 100vh;
   background: #F8FAFF;
   padding: 92px 0 50px;
 }
@@ -545,6 +546,12 @@ h3 {
 /* Sidebar Styles Start */
 .sidebar {
   position: relative;
+  min-height: 100vh;
+}
+@media screen and (max-width: 1023px) {
+  .sidebar {
+    display: none;
+  }
 }
 .sidebar__body {
   padding: 15px 0 0 0;
@@ -555,7 +562,7 @@ h3 {
   }
 }
 .sidebar__nav {
-  margin: 0 80px 0 0;
+  margin: 0 80px 100px 0;
   transition: all 0.2s ease-in-out;
 }
 @media screen and (max-width: 768px) {
@@ -1505,7 +1512,6 @@ h3 {
   background: transparent;
   padding: 18px 0 18px 23px;
   border: 2px solid #E2E3EF;
-  box-sizing: border-box;
   border-radius: 3px;
 }
 .form-inputs input::placeholder,
@@ -1858,6 +1864,16 @@ h3 {
 }
 .card__arrow {
   margin: auto 0 0 0;
+}
+@media screen and (max-width: 768px) {
+  .card {
+    padding: 25px 30px 35px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .card {
+    padding: 10px 15px 20px;
+  }
 }
 
 .card--content h3 {
@@ -2222,3 +2238,341 @@ h3 {
 }
 
 /* Assortment-load Styles End */
+/* Account Styles Start */
+.account {
+  margin: 0 0 30px 0;
+}
+
+.account .cards {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 15px 0;
+}
+.card__header p {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: #A9A9BD;
+}
+
+.card__edit {
+  background: transparent;
+  border: none;
+}
+
+.account-table {
+  max-width: 350px;
+}
+
+.account-row {
+  display: flex;
+}
+
+.account-hcell {
+  min-width: 100px;
+  display: flex;
+  align-items: flex-start;
+  font-weight: 400;
+  line-height: 1.875;
+  color: #A9A9BD;
+}
+
+.account-cell {
+  flex: 1;
+  line-height: 1.875;
+  color: #000;
+}
+
+.account-divider {
+  position: relative;
+  top: 20px;
+  flex: 1;
+  border-bottom: 1px dashed #DFDFE6;
+  margin: 0 10px;
+}
+
+.card--balance {
+  background: transparent;
+  box-shadow: none;
+  border: 2px dashed rgba(49, 45, 112, 0.1);
+}
+
+.account__balance {
+  line-height: 1.5;
+  color: #A9A9BD;
+  margin: 0 0 5px 0;
+}
+
+.account__money {
+  display: block;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 0 20px 0;
+}
+
+.account__info {
+  max-width: 300px;
+  line-height: 1.5;
+  color: #A9A9BD;
+  margin: 0 0 20px 0;
+}
+
+.account__history {
+  display: block;
+  margin: 0 0 30px 0;
+  transition: all 0.2s ease-in-out;
+}
+.account__history:hover {
+  color: #9D98EC;
+}
+
+.balance-button {
+  font-weight: 400;
+  max-width: 120px;
+}
+
+@media screen and (max-width: 320px) {
+  .account .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .account-hcell {
+    min-width: 85px;
+  }
+}
+/* Account Styles End */
+/* Password-change Styles Start */
+.password-change-form {
+  max-width: 385px;
+}
+
+.password .form-inputs input {
+  color: #000;
+  background: #fff;
+  padding: 8px 20px;
+}
+
+.password .password-icon {
+  top: 11px;
+}
+
+.password-button {
+  max-width: 160px;
+}
+
+/* Password-change Styles End */
+/* Orders Styles Start */
+.orders .cards {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 250px));
+}
+
+.orders .card {
+  position: relative;
+}
+
+.orders .card h3 {
+  margin: 0 0 15px 0;
+}
+
+.orders .card span {
+  line-height: 1.25;
+  color: #A9A9BD;
+}
+
+@media screen and (max-width: 600px) {
+  .orders .cards {
+    grid-template-columns: 1fr;
+    margin: 0 0 30px 0;
+  }
+}
+/* Orders Styles End */
+/* Bank-info Styles Start */
+.bank-info .account-table {
+  max-width: 100%;
+  margin: 0 0 30px 0;
+}
+
+.bank-info .account-hcell {
+  min-width: 200px;
+}
+
+.bank-info-button {
+  max-width: 190px;
+}
+
+@media screen and (max-width: 500px) {
+  .bank-info {
+    margin: 0 0 25px 0;
+  }
+
+  .bank-info .account-row {
+    display: block;
+  }
+
+  .bank-info .account-divider {
+    display: none;
+  }
+}
+/* Bank-info Styles End */
+/* Bank-info-edit Styles Start */
+.edit-form {
+  margin: 0 0 30px 0;
+}
+
+.edit-form__item {
+  max-width: 620px;
+  margin: 0 0 20px 0;
+}
+
+.edit-form__item:last-child {
+  margin: 0;
+}
+
+.edit-form__item label {
+  display: flex;
+  align-items: center;
+}
+
+.edit-form__item span {
+  min-width: 150px;
+  display: block;
+  line-height: 1.875;
+  color: #A9A9BD;
+  margin: 0 20px 0 0;
+}
+
+.edit-form__item input {
+  width: 100%;
+  font-size: 16px;
+  color: #000;
+  background: #fff;
+  padding: 8px 20px;
+  border: 2px solid #E2E3EF;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 768px) {
+  .edit-form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .edit-form__item {
+    max-width: 100%;
+    grid-column: span 3;
+    margin: 0;
+  }
+
+  .edit-form__item span {
+    margin: 0 0 10px 0;
+  }
+
+  .edit-form__item label {
+    display: block;
+  }
+
+  .edit-form__item:nth-child(4),
+.edit-form__item:nth-child(5),
+.edit-form__item:nth-child(6) {
+    grid-column: span 1;
+  }
+
+  .edit-form__item:nth-child(8),
+.edit-form__item:nth-child(9),
+.edit-form__item:nth-child(10) {
+    grid-column: span 1;
+  }
+
+  .edit-form__item:nth-child(14),
+.edit-form__item:nth-child(15),
+.edit-form__item:nth-child(16) {
+    grid-column: span 1;
+  }
+}
+@media screen and (max-width: 600px) {
+  form {
+    margin: 0 0 30px 0;
+  }
+
+  .edit-form {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .edit-form__item {
+    grid-column: auto;
+  }
+}
+/* Bank-info-edit Styles End */
+/* Balance Styles Start */
+.balance__add {
+  line-height: 1.5;
+  color: #A9A9BD;
+  margin: 0 0 10px 0;
+}
+
+.balance__buttons {
+  display: flex;
+}
+
+.balance .balance-button {
+  flex: 1 1 185px;
+  max-width: 185px;
+}
+
+.balance .balance-button:first-child {
+  max-width: 195px;
+  margin: 0 20px 0 0;
+}
+
+@media screen and (max-width: 600px) {
+  .balance__buttons {
+    display: block;
+    margin: 0 0 30px 0;
+  }
+
+  .balance .balance-button:first-child {
+    margin: 0 0 10px 0;
+  }
+}
+/* Balance Styles End */
+/* My-orders Styles Start */
+.orders-done {
+  margin: 30px 0 0 0;
+}
+
+.orders-done .cards {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 250px));
+}
+
+.orders-done .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+
+.orders-done .card h3 {
+  margin: 0 0 15px 0;
+}
+
+.orders-done .service-card__more {
+  display: block;
+  height: auto;
+  margin: auto 0 0 0;
+}
+
+@media screen and (max-width: 600px) {
+  .orders-done .cards {
+    grid-template-columns: 1fr;
+    margin: 0 0 30px 0;
+  }
+}
+/* My-orders Styles End */
