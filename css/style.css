@@ -2552,7 +2552,7 @@ h3 {
   grid-template-columns: repeat(auto-fit, minmax(220px, 250px));
 }
 
-.orders-done .card {
+.card--orders-done {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -2560,11 +2560,11 @@ h3 {
   padding-right: 10px;
 }
 
-.orders-done .card h3 {
+.card--orders-done h3 {
   margin: 0 0 15px 0;
 }
 
-.orders-done .service-card__more {
+.card--orders-done .service-card__more {
   display: block;
   height: auto;
   margin: auto 0 0 0;
