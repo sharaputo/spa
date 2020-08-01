@@ -1848,7 +1848,7 @@ h3 {
   box-shadow: 0px 0px 25px rgba(49, 45, 112, 0.08);
   border-radius: 3px;
 }
-.card a {
+.card__wrapper {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -1861,6 +1861,7 @@ h3 {
 }
 .card h3 {
   transition: all 0.2s ease-in-out;
+  margin: 0 0 15px 0;
 }
 .card__arrow {
   margin: auto 0 0 0;
@@ -2372,21 +2373,22 @@ h3 {
   grid-template-columns: repeat(auto-fit, minmax(220px, 250px));
 }
 
-.orders .card {
+.card--orders {
   position: relative;
 }
 
-.orders .card h3 {
+.card--orders h3 {
   margin: 0 0 15px 0;
 }
 
-.orders .card span {
+.card--orders span {
   line-height: 1.25;
+  line-height: 1.5;
   color: #A9A9BD;
 }
 
 @media screen and (max-width: 600px) {
-  .orders .cards {
+  .card--orders {
     grid-template-columns: 1fr;
     margin: 0 0 30px 0;
   }
