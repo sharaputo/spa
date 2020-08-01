@@ -2250,7 +2250,7 @@ h3 {
 .card__header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin: 0 0 15px 0;
 }
 .card__header p {
@@ -2262,6 +2262,7 @@ h3 {
 
 .card__edit {
   background: transparent;
+  padding: 5px 0 0 0;
   border: none;
 }
 
