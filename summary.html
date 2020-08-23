@@ -260,7 +260,237 @@
 				<div class="orders-chart__graph">
 					<p class="orders-chart__info">Количество новых заказов</p>
 					<div class="orders-chart__wrapper">
-						<canvas id="chartNew" width="900" height="420"></canvas>
+						<div class="canvas-wrapper">
+							<ul class="orders-chart__tabs">
+								<li class="date-choice-label">Период:</li>
+								<li>
+									<button>Сегодня</button>
+								</li>
+								<li class="date-active">
+									<button>Июль</button>
+								</li>
+								<li>
+									<button>Июнь</button>
+								</li>
+								<button class="dates-mobile-choice">
+									<span class="dropdown dropdown--sidebar"></span>
+								</button>
+							</ul>
+							<canvas id="myChart"></canvas>
+						</div>
+					</div>
+				</div>
+				<div class="orders-chart__assets">
+					<p class="orders-chart__info">Активы на площадках</p>
+					<div class="orders-chart__marketplaces">
+						<nav class="tabs">
+							<ul class="tabs__items">
+								<li class="tabs__item tabs__item--goods is-active">
+									<a href="#tab_01">Беру</a>
+								</li>
+								<li class="tabs__item tabs__item--goods">
+									<a href="#tab_02">Ozon</a>
+								</li>
+								<li class="tabs__item tabs__item--goods">
+									<a href="#tab_03">Wildberries</a>
+								</li>
+							</ul>
+							<ul class="tabs__body">
+								<li class="tabs__block tabs__block--goods is-active" id="tab_01">
+									<div class="tabs__info">
+										<p>На складе маркетплейса</p>
+										<span>0</span>
+									</div>
+									<div class="tabs__info">
+										<p>Ожидают сборки<br>и отгрузки</p>
+										<span>21 523</span>
+									</div>
+									<div class="tabs__info">
+										<p>Доставляются</p>
+										<span>11 352</span>
+									</div>
+									<div class="tabs__info">
+										<p>Всего товаров</p>
+										<span>32 904</span>
+									</div>
+								</li>
+								<li class="tabs__block tabs__block--goods" id="tab_02">
+									<div class="tabs__info">
+										<p>На складе маркетплейса</p>
+										<span>10</span>
+									</div>
+									<div class="tabs__info">
+										<p>Ожидают сборки<br>и отгрузки</p>
+										<span>32 634</span>
+									</div>
+									<div class="tabs__info">
+										<p>Доставляются</p>
+										<span>22 463</span>
+									</div>
+									<div class="tabs__info">
+										<p>Всего товаров</p>
+										<span>43 092</span>
+									</div>
+								</li>
+								<li class="tabs__block tabs__block--goods" id="tab_03">
+									<div class="tabs__info">
+										<p>На складе маркетплейса</p>
+										<span>18</span>
+									</div>
+									<div class="tabs__info">
+										<p>Ожидают сборки<br>и отгрузки</p>
+										<span>35 233</span>
+									</div>
+									<div class="tabs__info">
+										<p>Доставляются</p>
+										<span>65 943</span>
+									</div>
+									<div class="tabs__info">
+										<p>Всего товаров</p>
+										<span>98 456</span>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div class="orders-chart__new orders-chart__new--done">
+				<div class="orders-chart__graph">
+					<p class="orders-chart__info">Выручка по выполненным заказам</p>
+					<div class="orders-chart__wrapper">
+						<div class="canvas-wrapper">
+							<ul class="orders-chart__tabs">
+								<li class="date-choice-label">Период:</li>
+								<li>
+									<button>Сегодня</button>
+								</li>
+								<li class="date-active">
+									<button>Неделя</button>
+								</li>
+								<li>
+									<button>Месяц</button>
+								</li>
+								<button class="dates-mobile-choice">
+									<span class="dropdown dropdown--sidebar"></span>
+								</button>
+							</ul>
+							<canvas id="myChart2"></canvas>
+						</div>
+					</div>
+				</div>
+				<div class="orders-chart__assets">
+					<p class="orders-chart__info">Лучшие товары</p>
+					<div class="orders-chart__marketplaces">
+						<nav class="tabs">
+							<ul class="tabs__items">
+								<li class="date-choice-label">Период:</li>
+								<li class="tabs__item tabs__item--best is-active">
+									<a href="#tab_001">Сегодня</a>
+								</li>
+								<li class="tabs__item tabs__item--best">
+									<a href="#tab_002">Неделя</a>
+								</li>
+								<li class="tabs__item tabs__item--best">
+									<a href="#tab_003">Месяц</a>
+								</li>
+								<button class="dates-mobile-choice">
+									<span class="dropdown dropdown--sidebar"></span>
+								</button>
+							</ul>
+							<ul class="tabs__body">
+								<li class="tabs__block tabs__block--best is-active" id="tab_001">
+									<div class="tabs__info">
+										<p class="best-goods-title">Спиннер Boom Spinner Music Черный</p>
+										<p class="best-goods-info">
+											Продаж: <span>2</span>
+										</p>
+										<p class="best-goods-info">
+											Сумма: <span>460 руб.</span>
+										</p>
+									</div>
+									<div class="tabs__info">
+										<p class="best-goods-title">Спиннер Boom Spinner Six Wings</p>
+										<p class="best-goods-info">
+											Продаж: <span>17</span>
+										</p>
+										<p class="best-goods-info">
+											Сумма: <span>23 494 руб.</span>
+										</p>
+									</div>
+									<div class="tabs__info">
+										<p class="best-goods-title">Vertex Impress Click 3G Grafit</p>
+										<p class="best-goods-info">
+											Продаж: <span>3</span>
+										</p>
+										<p class="best-goods-info">
+											Сумма: <span>15 390 руб.</span>
+										</p>
+									</div>
+									<a href="#!">Смотреть все</a>
+								</li>
+								<li class="tabs__block tabs__block--best" id="tab_002">
+									<div class="tabs__info">
+										<p class="best-goods-title">Спиннер Boom Spinner Music Черный</p>
+										<p class="best-goods-info">
+											Продаж: <span>2</span>
+										</p>
+										<p class="best-goods-info">
+											Сумма: <span>460 руб.</span>
+										</p>
+									</div>
+									<div class="tabs__info">
+										<p class="best-goods-title">Спиннер Boom Spinner Six Wings</p>
+										<p class="best-goods-info">
+											Продаж: <span>17</span>
+										</p>
+										<p class="best-goods-info">
+											Сумма: <span>23 494 руб.</span>
+										</p>
+									</div>
+									<div class="tabs__info">
+										<p class="best-goods-title">Vertex Impress Click 3G Grafit</p>
+										<p class="best-goods-info">
+											Продаж: <span>3</span>
+										</p>
+										<p class="best-goods-info">
+											Сумма: <span>15 390 руб.</span>
+										</p>
+									</div>
+									<a href="#!">Смотреть все</a>
+								</li>
+								<li class="tabs__block tabs__block--best" id="tab_003">
+									<div class="tabs__info">
+										<p class="best-goods-title">Спиннер Boom Spinner Music Черный</p>
+										<p class="best-goods-info">
+											Продаж: <span>2</span>
+										</p>
+										<p class="best-goods-info">
+											Сумма: <span>460 руб.</span>
+										</p>
+									</div>
+									<div class="tabs__info">
+										<p class="best-goods-title">Спиннер Boom Spinner Six Wings</p>
+										<p class="best-goods-info">
+											Продаж: <span>17</span>
+										</p>
+										<p class="best-goods-info">
+											Сумма: <span>23 494 руб.</span>
+										</p>
+									</div>
+									<div class="tabs__info">
+										<p class="best-goods-title">Vertex Impress Click 3G Grafit</p>
+										<p class="best-goods-info">
+											Продаж: <span>3</span>
+										</p>
+										<p class="best-goods-info">
+											Сумма: <span>15 390 руб.</span>
+										</p>
+									</div>
+									<a href="#!">Смотреть все</a>
+								</li>
+							</ul>
+						</nav>
 					</div>
 				</div>
 			</div>
