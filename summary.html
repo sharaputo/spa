@@ -260,23 +260,25 @@
 				<div class="orders-chart__graph">
 					<p class="orders-chart__info">Количество новых заказов</p>
 					<div class="orders-chart__wrapper">
+						<ul class="orders-chart__tabs">
+							<li class="date-choice-label">Период:</li>
+							<li>
+								<button>Сегодня</button>
+							</li>
+							<li class="date-active">
+								<button>Июль</button>
+							</li>
+							<li>
+								<button>Июнь</button>
+							</li>
+							<button class="dates-mobile-choice">
+								<span class="dropdown dropdown--sidebar"></span>
+							</button>
+						</ul>
 						<div class="canvas-wrapper">
-							<ul class="orders-chart__tabs">
-								<li class="date-choice-label">Период:</li>
-								<li>
-									<button>Сегодня</button>
-								</li>
-								<li class="date-active">
-									<button>Июль</button>
-								</li>
-								<li>
-									<button>Июнь</button>
-								</li>
-								<button class="dates-mobile-choice">
-									<span class="dropdown dropdown--sidebar"></span>
-								</button>
-							</ul>
-							<canvas id="myChart"></canvas>
+							<div class="canvas-scroll">
+								<canvas id="myChart"></canvas>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -359,23 +361,25 @@
 				<div class="orders-chart__graph">
 					<p class="orders-chart__info">Выручка по выполненным заказам</p>
 					<div class="orders-chart__wrapper">
+						<ul class="orders-chart__tabs">
+							<li class="date-choice-label">Период:</li>
+							<li>
+								<button>Сегодня</button>
+							</li>
+							<li class="date-active">
+								<button>Неделя</button>
+							</li>
+							<li>
+								<button>Месяц</button>
+							</li>
+							<button class="dates-mobile-choice">
+								<span class="dropdown dropdown--sidebar"></span>
+							</button>
+						</ul>
 						<div class="canvas-wrapper">
-							<ul class="orders-chart__tabs">
-								<li class="date-choice-label">Период:</li>
-								<li>
-									<button>Сегодня</button>
-								</li>
-								<li class="date-active">
-									<button>Неделя</button>
-								</li>
-								<li>
-									<button>Месяц</button>
-								</li>
-								<button class="dates-mobile-choice">
-									<span class="dropdown dropdown--sidebar"></span>
-								</button>
-							</ul>
-							<canvas id="myChart2"></canvas>
+							<div class="canvas-scroll">
+								<canvas id="myChart2"></canvas>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -427,7 +431,7 @@
 											Сумма: <span>15 390 руб.</span>
 										</p>
 									</div>
-									<a href="#!">Смотреть все</a>
+									<button href="#!">Смотреть все</button>
 								</li>
 								<li class="tabs__block tabs__block--best" id="tab_002">
 									<div class="tabs__info">
@@ -457,7 +461,7 @@
 											Сумма: <span>15 390 руб.</span>
 										</p>
 									</div>
-									<a href="#!">Смотреть все</a>
+									<button href="#!">Смотреть все</button>
 								</li>
 								<li class="tabs__block tabs__block--best" id="tab_003">
 									<div class="tabs__info">
@@ -487,7 +491,7 @@
 											Сумма: <span>15 390 руб.</span>
 										</p>
 									</div>
-									<a href="#!">Смотреть все</a>
+									<button href="#!">Смотреть все</button>
 								</li>
 							</ul>
 						</nav>
@@ -497,6 +501,23 @@
 		</div>
 	</section>
 	<!--Orders Info End-->
+
+	<!-- <section class="modal modal--best-products">
+		<div class="modal-backdrop"></div>
+		<div class="modal__body">
+			<div class="modal__content">
+				<header>
+					<h2 class="section-title">Лучшие товары</h2>
+
+				</header>
+				<button type="button" aria-label="Close" class="modal-close">
+					<div aria-hidden="true">
+						<img src="img/icons/modal-close.svg" alt="close modal">
+					</div>
+				</button>
+			</div>
+		</div>
+	</section> -->
 
 	<!--Sidebar Start-->
 	<div class="sidebar__chat sidebar__chat--mobile">
