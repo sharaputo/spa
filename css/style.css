@@ -2595,6 +2595,301 @@ h3 {
   }
 }
 /* My-orders Styles End */
+/* Summary Styles Start */
+.orders-chart__new {
+  display: grid;
+  grid-template-columns: 1fr 385px;
+  column-gap: 20px;
+  margin: 0 0 40px 0;
+}
+@media screen and (max-width: 1200px) {
+  .orders-chart__new {
+    display: block;
+  }
+}
+.orders-chart__new--done {
+  margin: 0;
+}
+.orders-chart__graph {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 1200px) {
+  .orders-chart__graph {
+    margin: 0 0 25px 0;
+  }
+}
+.orders-chart__info {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: #A9A9BD;
+  margin: 0 0 25px 0;
+}
+.orders-chart__tabs {
+  position: absolute;
+  top: 44px;
+  left: 55px;
+  display: grid;
+  grid-template-columns: repeat(3, 90px);
+  gap: 10px;
+}
+@media screen and (max-width: 767px) {
+  .orders-chart__tabs {
+    position: relative;
+    top: 20px;
+    left: 0;
+    max-width: 280px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    background: #fff;
+    padding: 10px 0 10px 10px;
+    border: 2px solid #E2E3EF;
+    border-radius: 3px;
+  }
+}
+.orders-chart__tabs li {
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .orders-chart__tabs li {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .orders-chart__tabs li.date-active {
+    display: block;
+  }
+}
+.orders-chart__tabs li button {
+  width: 100%;
+  text-transform: lowercase;
+  padding: 5px 0;
+  border: 2px solid #E2E3EF;
+  border-radius: 3px;
+}
+@media screen and (max-width: 767px) {
+  .orders-chart__tabs li button {
+    padding: 0;
+    border: none;
+  }
+}
+.orders-chart__tabs li.date-active button {
+  color: #fff;
+  background: #312D70;
+  border: 2px solid #312D70;
+}
+@media screen and (max-width: 767px) {
+  .orders-chart__tabs li.date-active button {
+    color: #000;
+    background: none;
+    border: none;
+  }
+}
+.orders-chart__wrapper {
+  flex: 1;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  position: relative;
+  background: #fff;
+  padding: 60px 40px 40px 40px;
+  box-shadow: 0px 0px 25px rgba(49, 45, 112, 0.08);
+  border-radius: 3px;
+}
+@media screen and (max-width: 767px) {
+  .orders-chart__wrapper {
+    padding: 20px 30px;
+  }
+}
+.orders-chart__assets {
+  display: flex;
+  flex-direction: column;
+}
+.orders-chart__marketplaces {
+  flex: 1;
+  background: #fff;
+  padding: 40px;
+  box-shadow: 0px 0px 25px rgba(49, 45, 112, 0.08);
+  border-radius: 3px;
+}
+@media screen and (max-width: 767px) {
+  .orders-chart__marketplaces {
+    padding: 20px;
+  }
+}
+
+.orders-chart__tabs .date-choice-label,
+.tabs__items .date-choice-label {
+  display: none;
+  color: #A9A9BD;
+}
+@media screen and (max-width: 767px) {
+  .orders-chart__tabs .date-choice-label,
+.tabs__items .date-choice-label {
+    display: block;
+    margin: 0 5px 0 0;
+  }
+}
+
+.dates-mobile-choice {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .dates-mobile-choice {
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: -20px;
+  }
+}
+
+.canvas-wrapper {
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .canvas-wrapper {
+    flex: 0 0 800px;
+  }
+}
+
+.orders-chart .tabs__items {
+  display: flex;
+  border-bottom: 1px solid #E3E4F0;
+  margin: 0 0 30px 0;
+}
+.orders-chart .tabs__item {
+  padding: 0 0 30px 0;
+  margin: 0 30px -1px 0;
+}
+.orders-chart .tabs__item:last-child {
+  margin: 0;
+}
+.orders-chart .tabs__item.is-active {
+  font-weight: 600;
+  color: #A9A9BD;
+  border-bottom: 2px solid #312D70;
+}
+.orders-chart .tabs__block {
+  display: none;
+}
+.orders-chart .tabs__block .tabs__info p {
+  color: #A9A9BD;
+  margin: 0 0 10px 0;
+}
+.orders-chart .tabs__block .tabs__info span {
+  font-weight: 600;
+}
+
+.orders-chart .tabs__block.is-active {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .orders-chart .tabs__block.is-active {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  .orders-chart .tabs__block.is-active {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.orders-chart + .sidebar__chat--mobile {
+  display: none;
+}
+
+.orders-chart__new--done .tabs__items {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 90px);
+  gap: 10px;
+  border: none;
+}
+@media screen and (max-width: 767px) {
+  .orders-chart__new--done .tabs__items {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    background: #fff;
+    padding: 10px;
+    border: 2px solid #E2E3EF;
+    border-radius: 3px;
+  }
+}
+
+.orders-chart__new--done .tabs__item {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.orders-chart__new--done .tabs__item a {
+  display: block;
+  width: 100%;
+  text-transform: lowercase;
+  padding: 9px 0;
+  border: 2px solid #E2E3EF;
+  border-radius: 3px;
+}
+
+.orders-chart__new--done .tabs__item.is-active {
+  border: none;
+}
+
+.orders-chart__new--done .tabs__item.is-active a {
+  font-weight: 400;
+  color: #fff;
+  background: #312D70;
+  border: 2px solid #312D70;
+}
+
+.orders-chart__new--done .tabs__block.is-active {
+  display: block;
+}
+
+.orders-chart__new--done .tabs__info {
+  margin: 0 0 20px 0;
+}
+
+.orders-chart__new--done .tabs__info p.best-goods-title {
+  color: #312D70;
+}
+
+.orders-chart__new--done .best-goods-info span {
+  color: #000;
+}
+
+.orders-chart__new--done .tabs__block--best a {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 767px) {
+  .orders-chart__new--done .tabs__item--best {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .orders-chart__new--done .tabs__item--best.is-active {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .orders-chart__new--done .tabs__item--best.is-active a {
+    color: #000;
+    background: none;
+    border: none;
+  }
+}
+
+/* Summary Styles End */
 /* Orders Page Styles Start */
 .orders-info__body {
   display: grid;
@@ -2602,6 +2897,11 @@ h3 {
   grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
   height: 100vh;
+}
+@media screen and (max-width: 767px) {
+  .orders-info__body {
+    height: 100%;
+  }
 }
 .orders-info__heading {
   display: grid;
