@@ -43,18 +43,22 @@ select {
   font-size: inherit;
   color: inherit;
   letter-spacing: inherit;
+  background: transparent;
   border: none;
+  padding: 0;
+  cursor: pointer;
 }
 
 input[type=search],
 input[type=text],
 input[type=email],
 input[type=tel],
-input[type=password],
-textarea {
+input[type=submit],
+textarea,
+input {
+  appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-  appearance: none;
   border-radius: 0;
 }
 
@@ -74,6 +78,11 @@ label {
 button::-moz-focus-inner {
   padding: 0;
   border: 0;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
 }
 
 a {
@@ -96,7 +105,14 @@ ul li {
 }
 
 img {
+  max-width: 100%;
+  height: auto;
   vertical-align: top;
+}
+
+svg {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 h1,
@@ -2579,3 +2595,401 @@ h3 {
   }
 }
 /* My-orders Styles End */
+/* Orders Page Styles Start */
+.orders-info__body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
+  grid-template-rows: min-content 1fr min-content;
+  height: 100vh;
+}
+.orders-info__heading {
+  display: grid;
+  grid-template-columns: 200px minmax(auto, 1fr) 220px;
+  align-items: end;
+  column-gap: 40px;
+  row-gap: 20px;
+  padding: 0 0 25px 0;
+  border-bottom: 1px solid #E3E4F0;
+}
+.orders-info__heading .section-title {
+  margin: 0;
+}
+@media screen and (max-width: 767px) {
+  .orders-info__heading {
+    grid-template-columns: 1fr 100px;
+    grid-template-rows: repeat(3, auto);
+    align-items: start;
+    column-gap: 0;
+    padding: 0 0 20px 0;
+  }
+}
+.orders-info__markets {
+  display: flex;
+  position: relative;
+  padding: 0 0 9px 0;
+}
+.orders-info__markets li {
+  margin: 0 15px 0 0;
+}
+.orders-info__markets button {
+  color: #A9A9BD;
+}
+@media screen and (max-width: 767px) {
+  .orders-info__markets button {
+    color: #000;
+  }
+}
+.orders-info__markets .active-market {
+  font-weight: 600;
+  color: #312D70;
+}
+@media screen and (max-width: 767px) {
+  .orders-info__markets {
+    width: 100%;
+    grid-column: span 2;
+    justify-self: center;
+    align-items: center;
+    background: #fff;
+    padding: 20px 0 20px 20px;
+    border: 2px solid #E2E3EF;
+    border-radius: 3px;
+  }
+}
+.orders-info__filter {
+  justify-self: end;
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  gap: 5px;
+  align-items: end;
+  font-weight: 600;
+  padding: 0 0 9px 0;
+}
+@media screen and (max-width: 767px) {
+  .orders-info__filter {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 0;
+  }
+}
+.orders-info__delete {
+  justify-self: start;
+  color: #A9A9BD;
+}
+@media screen and (max-width: 767px) {
+  .orders-info__delete {
+    grid-column: span 2;
+    grid-row: 3/4;
+  }
+}
+.orders-info__sort {
+  display: flex;
+  align-items: flex-end;
+  grid-column: 3/4;
+  grid-row: 2/3;
+  justify-self: end;
+}
+.orders-info__sort li:not(:last-child) {
+  margin: 0 10px 0 0;
+}
+.orders-info__sort .sort-show {
+  color: #A9A9BD;
+  padding: 0 0 5px 0;
+}
+.orders-info__sort button {
+  color: #A9A9BD;
+}
+.orders-info__sort button.active-value {
+  color: #312D70;
+  font-weight: 600;
+}
+@media screen and (max-width: 767px) {
+  .orders-info__sort {
+    display: none;
+  }
+}
+.orders-info__table {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  margin: 0 0 40px 0;
+}
+@media screen and (max-width: 767px) {
+  .orders-info__table {
+    display: block;
+    margin: 0 0 30px 0;
+  }
+}
+.orders-info__pagination {
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .orders-info__pagination {
+    display: none;
+  }
+}
+.orders-info__pages {
+  justify-self: center;
+  display: grid;
+  grid-template-columns: repeat(7, 42px);
+  gap: 10px;
+}
+.orders-info__page {
+  text-align: center;
+}
+.orders-info__page a {
+  display: block;
+  width: 100%;
+  background: #FFF;
+  padding: 11px 0;
+  border-radius: 3px;
+}
+.orders-info__page--active a {
+  font-weight: 600;
+  color: #FFF;
+  background: #312D70;
+}
+.orders-info__modal {
+  display: none;
+  position: absolute;
+  top: 37px;
+  left: 7px;
+  width: 40vw;
+  z-index: 10;
+}
+@media screen and (max-width: 769px) {
+  .orders-info__modal {
+    width: 70vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .orders-info__modal {
+    width: 320px;
+    left: -50px;
+  }
+}
+.orders-info__modal.active {
+  display: block;
+}
+
+.marketplaces-mobile {
+  color: #A9A9BD;
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .marketplaces-mobile {
+    display: block;
+  }
+}
+
+.marketplace.hidden {
+  display: none;
+}
+
+.markets-mobile-choice {
+  display: none;
+}
+.markets-mobile-choice .dropdown {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 767px) {
+  .markets-mobile-choice {
+    display: block;
+  }
+}
+
+.orders-table {
+  width: 100%;
+}
+.orders-table__row {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  column-gap: 40px;
+  padding: 20px 0;
+  border-bottom: 1px solid #E3E4F0;
+}
+.orders-table__headers {
+  color: #A9A9BD;
+}
+.orders-table__headers .orders-table__content {
+  align-items: start;
+}
+@media screen and (max-width: 767px) {
+  .orders-table__headers {
+    display: none;
+  }
+}
+.orders-table__content {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+  column-gap: 1.5vw;
+}
+@media screen and (max-width: 767px) {
+  .orders-table__content {
+    display: block;
+  }
+}
+.orders-table__sorting .sort {
+  display: inline;
+  position: relative;
+}
+.orders-table__sorting span {
+  line-height: 1.5;
+}
+@media screen and (max-width: 767px) {
+  .orders-table__cell {
+    display: flex;
+    align-items: flex-end;
+    margin: 0 0 10px 0;
+  }
+}
+.orders-table__cell--modal {
+  position: relative;
+}
+.orders-table__heading {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .orders-table__heading {
+    display: block;
+    color: #A9A9BD;
+    margin: 0 5px 0 0;
+  }
+  .orders-table__heading::after {
+    content: ":";
+    margin: 0 0 0 -5px;
+  }
+}
+.orders-table__sort {
+  position: absolute;
+  right: -10px;
+  bottom: 8px;
+  width: 6px;
+  height: 3px;
+}
+.orders-table__sort .sort-down {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .orders-table__sort {
+    display: none;
+  }
+}
+.orders-table__row--process .order-status {
+  color: #FF4F00;
+}
+.orders-table__row--process .order-effect {
+  color: #FF0000;
+}
+.orders-table__row--cancelled .order-number,
+.orders-table__row--cancelled .order-partner-number,
+.orders-table__row--cancelled .order-date,
+.orders-table__row--cancelled .order-status,
+.orders-table__row--cancelled .order-amount,
+.orders-table__row--cancelled .order-cost,
+.orders-table__row--cancelled .order-effect {
+  color: #A9A9BD;
+}
+@media screen and (max-width: 1300px) {
+  .orders-table {
+    flex: 0 0 1100px;
+  }
+}
+
+.order-number {
+  cursor: pointer;
+}
+
+.order-partner-number,
+.order-date,
+.order-amount,
+.order-cost {
+  color: #000;
+}
+
+.order-status,
+.order-effect {
+  color: #00D385;
+}
+
+.orders-info__pagination--mobile {
+  display: none;
+  max-width: 170px;
+}
+.orders-info__pagination--mobile button {
+  width: 100%;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  background: #00D385;
+  padding: 11px 0;
+  border-radius: 3px;
+}
+@media screen and (max-width: 767px) {
+  .orders-info__pagination--mobile {
+    display: block;
+  }
+}
+
+.orders-info + .sidebar__chat--mobile {
+  display: none;
+}
+
+.orders-info .input-checkbox input + label {
+  padding: 0 0 8px 0;
+}
+
+.orders-info .input-checkbox input + label:before,
+.orders-info .input-checkbox input + label:after {
+  top: -6px;
+}
+
+.orders-table__headers .input-checkbox input + label:before,
+.orders-table__headers .input-checkbox input + label:after {
+  top: -2px;
+}
+
+.orders-modal-wrapper {
+  position: relative;
+  background: #fff;
+  padding: 20px 30px 35px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 25px rgba(49, 45, 112, 0.08);
+}
+
+.orders-modal-wrapper::before {
+  position: absolute;
+  top: -18px;
+  left: 30px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 16px solid #fff;
+}
+@media screen and (max-width: 600px) {
+  .orders-modal-wrapper::before {
+    left: 194px;
+  }
+}
+
+.orders-modal li {
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid #E3E4F0;
+  margin: 0 0 15px 0;
+}
+
+.orders-modal .order-title {
+  font-weight: 600;
+  line-height: 1.5;
+  color: #000;
+  margin: 0 0 10px 0;
+}
+
+/* Orders Page Styles End */
