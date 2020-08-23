@@ -2637,7 +2637,7 @@ h3 {
 @media screen and (max-width: 767px) {
   .orders-chart__tabs {
     position: relative;
-    top: 20px;
+    top: 0;
     left: 0;
     max-width: 280px;
     width: 100%;
@@ -2690,9 +2690,6 @@ h3 {
 }
 .orders-chart__wrapper {
   flex: 1;
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
   position: relative;
   background: #fff;
   padding: 60px 40px 40px 40px;
@@ -2747,10 +2744,17 @@ h3 {
 }
 
 .canvas-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.canvas-scroll {
   width: 100%;
 }
 @media screen and (max-width: 767px) {
-  .canvas-wrapper {
+  .canvas-scroll {
     flex: 0 0 800px;
   }
 }
@@ -2865,7 +2869,7 @@ h3 {
   color: #000;
 }
 
-.orders-chart__new--done .tabs__block--best a {
+.orders-chart__new--done .tabs__block--best button {
   font-weight: 600;
 }
 
