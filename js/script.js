@@ -43,7 +43,7 @@ $(document).ready(function () {
 $(document).ready(function () {
 	$('.sidebar__item a').click(function (event) {
 		$('.header__burger,.sidebar__nav').toggleClass('active');
-		$('body').toggleClass('lock');
+		// $('body').toggleClass('lock');
 	});
 });
 
@@ -113,5 +113,50 @@ $(document).on('keydown', function (e) {
 		$('.modal--reset').removeClass('active');
 		$('.modal--order').removeClass('active');
 		$('.wrapper').removeClass('locked');
+	}
+});
+
+// Modal order info open & close
+$(document).ready(function () {
+	$('.order-number').click(function (event) {
+		$('.orders-info__modal').addClass('active');
+	});
+});
+
+$(function () {
+	$(document).mouseup(function (e) {
+		let div = $('.orders-info__modal');
+		if (!div.is(e.target) &&
+			div.has(e.target).length === 0) {
+			div.removeClass('active');
+		}
+	});
+});
+
+$(document).on('keydown', function (e) {
+	if (e.keyCode === 27) {
+		$('.orders-info__modal').removeClass('active');
+	}
+});
+
+// Chart script
+let firstChart = document.getElementById('chartNew').getContext('2d');
+
+var lineChart = new Chart(firstChart, {
+	type: 'line',
+	data: {
+		labels: ["01.07", "02.07", "03.07", "04.07", "05.07", "06.07"],
+		datasets: [{
+			label: '',
+			data: [0, 25, 50, 75, 100],
+			backgroundColor: [
+				'#312D70',
+				'#312D70',
+				'#312D70',
+				'#312D70',
+				'#312D70',
+				'#312D70'
+			]
+		}]
 	}
 });
