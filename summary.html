@@ -431,7 +431,7 @@
 											Сумма: <span>15 390 руб.</span>
 										</p>
 									</div>
-									<button href="#!">Смотреть все</button>
+									<button class="best-products-open" href="#!">Смотреть все</button>
 								</li>
 								<li class="tabs__block tabs__block--best" id="tab_002">
 									<div class="tabs__info">
@@ -461,7 +461,7 @@
 											Сумма: <span>15 390 руб.</span>
 										</p>
 									</div>
-									<button href="#!">Смотреть все</button>
+									<button class="best-products-open" href="#!">Смотреть все</button>
 								</li>
 								<li class="tabs__block tabs__block--best" id="tab_003">
 									<div class="tabs__info">
@@ -491,7 +491,7 @@
 											Сумма: <span>15 390 руб.</span>
 										</p>
 									</div>
-									<button href="#!">Смотреть все</button>
+									<button class="best-products-open" href="#!">Смотреть все</button>
 								</li>
 							</ul>
 						</nav>
@@ -502,14 +502,127 @@
 	</section>
 	<!--Orders Info End-->
 
-	<!-- <section class="modal modal--best-products">
+	<section class="modal modal--best-products">
 		<div class="modal-backdrop"></div>
 		<div class="modal__body">
 			<div class="modal__content">
 				<header>
 					<h2 class="section-title">Лучшие товары</h2>
-
+					<ul class="orders-chart__tabs">
+						<li class="date-choice-label">Период:</li>
+						<li>
+							<button>Сегодня</button>
+						</li>
+						<li class="date-active">
+							<button>Неделя</button>
+						</li>
+						<li>
+							<button>Месяц</button>
+						</li>
+						<button class="dates-mobile-choice">
+							<span class="dropdown dropdown--sidebar"></span>
+						</button>
+					</ul>
 				</header>
+				<ul class="orders-table__sort-fields">
+					<li class="orders-table__sorting orders-table__sorting--mobile">
+						<div class="sort">
+							<span>Сортировать по:</span>
+						</div>
+					</li>
+					<li class="orders-table__sorting">
+						<div class="sort">
+							<span class="sort-label">Название</span>
+							<span class="sort-label sort-label--mobile">Названию</span>
+							<button class="orders-table__sort">
+								<img src="img/icons/orders-table-sort-up.svg" alt="sort up" class="sort-up">
+								<img src="img/icons/orders-table-sort-down.svg" alt="sort down" class="sort-down">
+							</button>
+						</div>
+					</li>
+					<li class="orders-table__sorting active">
+						<div class="sort">
+							<span class="sort-label">Продаж</span>
+							<span class="sort-label sort-label--mobile">Продажам</span>
+							<button class="orders-table__sort">
+								<img src="img/icons/orders-table-sort-up.svg" alt="sort up" class="sort-up">
+								<img src="img/icons/orders-table-sort-down.svg" alt="sort down" class="sort-down">
+							</button>
+						</div>
+					</li>
+					<li class="orders-table__sorting">
+						<div class="sort">
+							<span class="sort-label">Сумма</span>
+							<span class="sort-label sort-label--mobile">Сумме</span>
+							<button class="orders-table__sort">
+								<img src="img/icons/orders-table-sort-up.svg" alt="sort up" class="sort-up">
+								<img src="img/icons/orders-table-sort-down.svg" alt="sort down" class="sort-down">
+							</button>
+						</div>
+					</li>
+					<button class="dates-mobile-choice">
+						<span class="dropdown dropdown--sidebar"></span>
+					</button>
+				</ul>
+				<ul class="products-list">
+					<li class="products-item">
+						<p class="products-title">
+							Спиннер Boom Spinner Music Черный
+						</p>
+						<div class="products-info">
+							<p class="products-label">
+								<span class="products-name">Количество</span>
+								<span class="account-divider"></span>
+							</p>
+							<span class="products-details">1</span>
+						</div>
+						<div class="products-info">
+							<p class="products-label">
+								<span class="products-name">Стоимость</span>
+								<span class="account-divider"></span>
+							</p>
+							<span class="products-details">460</span>
+						</div>
+					</li>
+					<li class="products-item">
+						<p class="products-title">
+							2.5D FS FG Стекло защитное для Meizu 16TH TFN белое
+						</p>
+						<div class="products-info">
+							<p class="products-label">
+								<span class="products-name">Количество</span>
+								<span class="account-divider"></span>
+							</p>
+							<span class="products-details">17</span>
+						</div>
+						<div class="products-info">
+							<p class="products-label">
+								<span class="products-name">Стоимость</span>
+								<span class="account-divider"></span>
+							</p>
+							<span class="products-details">23 494</span>
+						</div>
+					</li>
+				</ul>
+				<div class="orders-info__pagination">
+					<a href="#!" class="page-back">
+						<img src="img/icons/arrow-back.svg" alt="back">
+					</a>
+					<ul class="orders-info__pages">
+						<li class="orders-info__page orders-info__page--active">
+							<a href="#!">1</a>
+						</li>
+						<li class="orders-info__page">
+							<a href="#!">2</a>
+						</li>
+					</ul>
+					<a href="#!" class="page-back">
+						<img src="img/icons/cards-arrow.svg" alt="next">
+					</a>
+				</div>
+				<div class="orders-info__pagination--mobile">
+					<button>Показать еще 10</button>
+				</div>
 				<button type="button" aria-label="Close" class="modal-close">
 					<div aria-hidden="true">
 						<img src="img/icons/modal-close.svg" alt="close modal">
@@ -517,7 +630,7 @@
 				</button>
 			</div>
 		</div>
-	</section> -->
+	</section>
 
 	<!--Sidebar Start-->
 	<div class="sidebar__chat sidebar__chat--mobile">
