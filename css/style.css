@@ -2827,6 +2827,10 @@ h3 {
   }
 }
 
+.orders-chart__new--done .tabs__items .dates-mobile-choice {
+  top: 14px;
+}
+
 .orders-chart__new--done .tabs__item {
   text-align: center;
   padding: 0;
@@ -3068,6 +3072,10 @@ h3 {
   }
 }
 
+.modal--best-products + .sidebar__chat--mobile {
+  display: none;
+}
+
 /* Summary Styles End */
 /* Orders Page Styles Start */
 .orders-info__body {
@@ -3116,12 +3124,21 @@ h3 {
 }
 @media screen and (max-width: 767px) {
   .orders-info__markets button {
+    display: none;
     color: #000;
   }
 }
 .orders-info__markets .active-market {
   font-weight: 600;
   color: #312D70;
+}
+@media screen and (max-width: 767px) {
+  .orders-info__markets .active-market {
+    display: block;
+    font-weight: 400;
+    text-transform: lowercase;
+    color: #000;
+  }
 }
 @media screen and (max-width: 767px) {
   .orders-info__markets {
