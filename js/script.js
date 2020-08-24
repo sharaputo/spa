@@ -45,6 +45,21 @@ $(document).ready(function () {
 	});
 });
 
+// Modal windows open
+$(document).ready(function () {
+	$('.best-products-open').click(function (event) {
+		$('.modal--best-products').addClass('active');
+		$('.wrapper').addClass('locked');
+	});
+});
+
+$(document).ready(function () {
+	$('.modal-close').click(function (event) {
+		$('.modal--best-products').removeClass('active');
+		$('.wrapper').removeClass('locked');
+	});
+});
+
 // Modal windows close
 $(document).ready(function () {
 	$('.modal-close').click(function (event) {
