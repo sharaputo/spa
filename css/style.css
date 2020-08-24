@@ -2893,6 +2893,181 @@ h3 {
   }
 }
 
+/* Modal Summary Styles */
+.modal__body {
+  max-width: 1000px;
+}
+.modal__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal--best-products {
+  display: none;
+  padding: 10vh 15px 5vh;
+}
+
+.modal--best-products.active {
+  display: block;
+}
+
+.modal__content header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 30px 0;
+}
+@media screen and (max-width: 767px) {
+  .modal__content header {
+    display: block;
+    margin: 0 0 10px 0;
+  }
+}
+
+.modal--best-products .modal-backdrop {
+  background: rgba(49, 45, 112, 0.9);
+}
+
+.modal--best-products .section-title {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+}
+@media screen and (max-width: 767px) {
+  .modal--best-products .section-title {
+    margin: 0 0 25px 0;
+  }
+}
+
+.modal--best-products .orders-chart__tabs {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+@media screen and (max-width: 767px) {
+  .modal--best-products .orders-chart__tabs {
+    max-width: 100%;
+  }
+}
+
+.modal--best-products .orders-table__sort-fields {
+  padding: 20px 0;
+  border-top: 1px solid #E3E4F0;
+  border-bottom: 1px solid #E3E4F0;
+}
+.modal--best-products .orders-table__sort-fields span {
+  color: #A9A9BD;
+}
+
+.modal--best-products .products-list {
+  flex: 1;
+  margin: 0 0 30px 0;
+}
+@media screen and (max-width: 767px) {
+  .modal--best-products .products-list {
+    border-top: 1px solid #E3E4F0;
+    margin: 0 0 20px 0;
+  }
+}
+
+.modal--best-products .orders-table__sort-fields,
+.modal--best-products .products-item {
+  display: grid;
+  grid-template-columns: 1fr 80px 80px;
+  column-gap: 20px;
+}
+
+.modal--best-products .products-item {
+  padding: 20px 0;
+  border-bottom: 1px solid #E3E4F0;
+}
+@media screen and (max-width: 767px) {
+  .modal--best-products .products-item {
+    display: block;
+    padding: 15px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .modal--best-products .products-item .products-title {
+    margin: 0 0 12px 0;
+  }
+}
+
+.modal--best-products .products-item .products-info {
+  display: flex;
+  margin: 0 0 5px 0;
+}
+
+.modal--best-products .products-item .products-info .products-name {
+  color: #A9A9BD;
+}
+
+.modal--best-products .products-item .products-info .account-divider {
+  top: -3px;
+}
+@media screen and (max-width: 767px) {
+  .modal--best-products .products-item .products-info .account-divider {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .modal--best-products .orders-table__sort-fields {
+    position: relative;
+    display: flex;
+    column-gap: 5px;
+    background: #fff;
+    padding: 10px 0 10px 10px;
+    border: 2px solid #E2E3EF;
+    border-radius: 3px;
+    margin: 0 0 30px 0;
+  }
+}
+
+.modal--best-products .products-item .products-info .products-label {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .modal--best-products .products-item .products-info .products-label {
+    display: flex;
+    flex: 0 1 120px;
+  }
+}
+
+.modal--best-products .products-details {
+  color: #000;
+}
+
+.modal--best-products .orders-table__sorting--mobile,
+.modal--best-products .sort-label--mobile {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .modal--best-products .orders-table__sorting,
+.modal--best-products .orders-table__sorting .sort-label {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .modal--best-products .orders-table__sorting--mobile,
+.modal--best-products .orders-table__sorting.active {
+    display: block;
+  }
+}
+
+.modal--best-products .orders-table__sorting.active .sort-label--mobile {
+  color: #000;
+  text-transform: lowercase;
+}
+@media screen and (max-width: 767px) {
+  .modal--best-products .orders-table__sorting.active .sort-label--mobile {
+    display: block;
+  }
+}
+
 /* Summary Styles End */
 /* Orders Page Styles Start */
 .orders-info__body {
@@ -3025,8 +3200,7 @@ h3 {
   }
 }
 .orders-info__pagination {
-  display: grid;
-  grid-template-columns: 50px 1fr 50px;
+  display: flex;
   align-items: center;
 }
 @media screen and (max-width: 767px) {
@@ -3035,13 +3209,15 @@ h3 {
   }
 }
 .orders-info__pages {
-  justify-self: center;
-  display: grid;
-  grid-template-columns: repeat(7, 42px);
-  gap: 10px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .orders-info__page {
+  flex: 0 0 42px;
   text-align: center;
+  margin: 0 5px;
 }
 .orders-info__page a {
   display: block;
